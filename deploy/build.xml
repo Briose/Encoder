@@ -3,4 +3,7 @@
 
 	<!-- Change version number here -->
 	<property name="version" value="1.2.2" />
-	<
+	<!-- Change end -->
+
+	<property name="src.dir" location="../" />
+	<pr
