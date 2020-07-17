@@ -6,4 +6,5 @@
 	<!-- Change end -->
 
 	<property name="src.dir" location="../" />
-	<pr
+	<property name="build.dir" location="./build" />
+	<prope
