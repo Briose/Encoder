@@ -7,4 +7,5 @@
 
 	<property name="src.dir" location="../" />
 	<property name="build.dir" location="./build" />
-	<prope
+	<property name="goxgui.dir" location="${src.dir}/goxgui" />
+	<property na
