@@ -8,4 +8,5 @@
 	<property name="src.dir" location="../" />
 	<property name="build.dir" location="./build" />
 	<property name="goxgui.dir" location="${src.dir}/goxgui" />
-	<property na
+	<property name="goxtool.dir" location="${src.dir}/goxtool" />
+	<property name="icon.f
