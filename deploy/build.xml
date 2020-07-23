@@ -9,4 +9,6 @@
 	<property name="build.dir" location="./build" />
 	<property name="goxgui.dir" location="${src.dir}/goxgui" />
 	<property name="goxtool.dir" location="${src.dir}/goxtool" />
-	<property name="icon.f
+	<property name="icon.file" location="${src.dir}/run/bitcoin.png" />
+
+	<!-- ==================
