@@ -11,4 +11,6 @@
 	<property name="goxtool.dir" location="${src.dir}/goxtool" />
 	<property name="icon.file" location="${src.dir}/run/bitcoin.png" />
 
-	<!-- ==================
+	<!-- ================================= 
+          target: clean              
+         ==
