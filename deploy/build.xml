@@ -14,4 +14,4 @@
 	<!-- ================================= 
           target: clean              
          ================================= -->
-	<target name="clea
+	<target name="clean" description="Cleans the build directory"
