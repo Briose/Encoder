@@ -14,4 +14,8 @@
 	<!-- ================================= 
           target: clean              
          ================================= -->
-	<target name="clean" description="Cleans the build directory"
+	<target name="clean" description="Cleans the build directory">
+		<delete dir="${build.dir}" verbose="true" />
+	</target>
+
+	<!
