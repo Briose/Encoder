@@ -21,4 +21,4 @@
 	<!-- ================================= 
           target: build_mac            
          ================================= -->
-	<target n
+	<target name="build_mac" depends="clean" description="Builds the project for Mac OSX x
