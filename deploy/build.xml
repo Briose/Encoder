@@ -24,4 +24,4 @@
 	<target name="build_mac" depends="clean" description="Builds the project for Mac OSX x64">
 
 		<!-- Change system-dependent paths here -->
-		<
+		<property name="python_executable.file" location="/usr/local/bin/python" />
