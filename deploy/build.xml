@@ -25,4 +25,5 @@
 
 		<!-- Change system-dependent paths here -->
 		<property name="python_executable.file" location="/usr/local/bin/python" />
-		<property name="pyinstaller_script.file" location="/Us
+		<property name="pyinstaller_script.file" location="/Users/user/Anwendungen/pyinstaller-2.0/pyinstaller.py" />
+		<
