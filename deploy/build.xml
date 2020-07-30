@@ -28,4 +28,5 @@
 		<property name="pyinstaller_script.file" location="/Users/user/Anwendungen/pyinstaller-2.0/pyinstaller.py" />
 		<!-- Change end -->
 
-		<property name="build.mac.dir" location="
+		<property name="build.mac.dir" location="${build.dir}/mac" />
+		<property name="package.dir" location=
