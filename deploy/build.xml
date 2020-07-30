@@ -29,4 +29,5 @@
 		<!-- Change end -->
 
 		<property name="build.mac.dir" location="${build.dir}/mac" />
-		<property name="package.dir" location=
+		<property name="package.dir" location="${build.mac.dir}/goxgui-${version}-macos-x64" />
+		<propert
