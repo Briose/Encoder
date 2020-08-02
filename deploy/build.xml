@@ -36,4 +36,4 @@
 		
 		<mkdir dir="${build.dir}" />
 
-		<prope
+		<property name="spec.file" location="${build.mac.dir}/build.spec
