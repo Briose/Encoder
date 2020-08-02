@@ -31,4 +31,9 @@
 		<property name="build.mac.dir" location="${build.dir}/mac" />
 		<property name="package.dir" location="${build.mac.dir}/goxgui-${version}-macos-x64" />
 		<property name="package.file" location="${package.dir}.zip" />
-		<property name="app.file" location="${package.
+		<property name="app.file" location="${package.dir}/goxgui.app" />
+		
+		
+		<mkdir dir="${build.dir}" />
+
+		<prope
