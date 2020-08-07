@@ -40,4 +40,5 @@
 		<copy file="build_mac.spec" tofile="${spec.file}" verbose="true" />
 
 		<replace file="${spec.file}">
-			<replacefilter tok
+			<replacefilter token="@goxgui.dir@" value="${goxgui.dir}" />
+			<replace
