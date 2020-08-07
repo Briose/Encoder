@@ -37,4 +37,7 @@
 		<mkdir dir="${build.dir}" />
 
 		<property name="spec.file" location="${build.mac.dir}/build.spec" />
-		<copy file="build_mac.spec" tofile="${spec.file}" verbose="tru
+		<copy file="build_mac.spec" tofile="${spec.file}" verbose="true" />
+
+		<replace file="${spec.file}">
+			<replacefilter tok
