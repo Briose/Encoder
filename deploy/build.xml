@@ -42,4 +42,4 @@
 		<replace file="${spec.file}">
 			<replacefilter token="@goxgui.dir@" value="${goxgui.dir}" />
 			<replacefilter token="@goxtool.dir@" value="${goxtool.dir}" />
-			<replac
+			<replacefilter token="@executable.file@" value="${build.mac.dir}/goxgui" />
