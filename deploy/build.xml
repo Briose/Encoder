@@ -41,4 +41,5 @@
 
 		<replace file="${spec.file}">
 			<replacefilter token="@goxgui.dir@" value="${goxgui.dir}" />
-			<replace
+			<replacefilter token="@goxtool.dir@" value="${goxtool.dir}" />
+			<replac
