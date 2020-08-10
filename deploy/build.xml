@@ -44,3 +44,4 @@
 			<replacefilter token="@goxtool.dir@" value="${goxtool.dir}" />
 			<replacefilter token="@executable.file@" value="${build.mac.dir}/goxgui" />
 			<replacefilter token="@icon.file@" value="${icon.file}" />
+			<replacefilter token="@app.file@" value="${app.fi
