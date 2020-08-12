@@ -47,4 +47,6 @@
 			<replacefilter token="@app.file@" value="${app.file}" />
 		</replace>
 		
-		<exec executable="${python_
+		<exec executable="${python_executable.file}">
+			<arg value="${pyinstaller_script.file}" />
+	
