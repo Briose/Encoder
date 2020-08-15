@@ -49,4 +49,7 @@
 		
 		<exec executable="${python_executable.file}">
 			<arg value="${pyinstaller_script.file}" />
-	
+			<arg value="${spec.file}" />
+		</exec>
+
+		<!-- Hack to in
