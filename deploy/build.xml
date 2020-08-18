@@ -53,4 +53,4 @@
 		</exec>
 
 		<!-- Hack to include mac icon into package, currently not supported by pyinstaller,
-		  
+		     see http://www.pyinstaller.org/export/v2.0/project/doc/Manua
