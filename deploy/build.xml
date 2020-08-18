@@ -52,4 +52,5 @@
 			<arg value="${spec.file}" />
 		</exec>
 
-		<!-- Hack to in
+		<!-- Hack to include mac icon into package, currently not supported by pyinstaller,
+		  
