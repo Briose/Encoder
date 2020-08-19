@@ -54,4 +54,4 @@
 
 		<!-- Hack to include mac icon into package, currently not supported by pyinstaller,
 		     see http://www.pyinstaller.org/export/v2.0/project/doc/Manual.html?format=raw#spec-files -->
-		<copy file="${src.dir}/run/
+		<copy file="${src.dir}/run/bitcoin.icns" tofile="${app.file}/Contents/Resources/icon-windowed.icns" ov
