@@ -56,4 +56,6 @@
 		     see http://www.pyinstaller.org/export/v2.0/project/doc/Manual.html?format=raw#spec-files -->
 		<copy file="${src.dir}/run/bitcoin.icns" tofile="${app.file}/Contents/Resources/icon-windowed.icns" overwrite="true" verbose="true" />
 
-		<copy file="${src.dir}/gpl-3.0.txt"
+		<copy file="${src.dir}/gpl-3.0.txt" todir="${package.dir}" verbose="true" />
+	
+		<zip 
