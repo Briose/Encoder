@@ -59,4 +59,9 @@
 		<copy file="${src.dir}/gpl-3.0.txt" todir="${package.dir}" verbose="true" />
 	
 		<zip destfile="${package.file}">
-			<zipfileset dir="${package.dir}" f
+			<zipfileset dir="${package.dir}" filemode="755" />
+		</zip>
+
+	</target>
+
+	<!-- ===============
