@@ -68,3 +68,6 @@
           target: build_win            
          ================================= -->
 	<target name="build_win" depends="clean" description="Builds the project for Windows x86">
+
+		<!-- Change system-dependent paths here -->
+		<property name="p
