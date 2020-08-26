@@ -67,4 +67,4 @@
 	<!-- ================================= 
           target: build_win            
          ================================= -->
-	<target name="build_win" depends="clea
+	<target name="build_win" depends="clean" description="Builds the project for Windows x86">
