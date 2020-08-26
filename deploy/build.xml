@@ -70,4 +70,4 @@
 	<target name="build_win" depends="clean" description="Builds the project for Windows x86">
 
 		<!-- Change system-dependent paths here -->
-		<property name="p
+		<property name="python_executable.file" value="C:/Programme/Python/Python2
