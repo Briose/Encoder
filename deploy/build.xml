@@ -74,4 +74,5 @@
 		<property name="pyinstaller_script.file" value="C:/Programme/Tools/pyinstaller-2.0/utils/Build.py" />
 		<!-- Change end -->
 
-		<property name="build.win.dir" location="${
+		<property name="build.win.dir" location="${build.dir}/win" />
+		<property name="package.dir" 
