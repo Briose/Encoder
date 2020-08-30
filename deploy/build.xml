@@ -71,4 +71,7 @@
 
 		<!-- Change system-dependent paths here -->
 		<property name="python_executable.file" value="C:/Programme/Python/Python27/python.exe" />
-		<property name="pyinstaller_script.file" value="C:/Programme/Tools/pyinstaller-2.0/utils/Build.py" /
+		<property name="pyinstaller_script.file" value="C:/Programme/Tools/pyinstaller-2.0/utils/Build.py" />
+		<!-- Change end -->
+
+		<property name="build.win.dir" location="${
