@@ -76,4 +76,5 @@
 
 		<property name="build.win.dir" location="${build.dir}/win" />
 		<property name="package.dir" location="${build.win.dir}/goxgui-${version}-win-x86" />
-		<property name
+		<property name="package.file" location="${package.dir}.zip" />
+		<property name="ex
