@@ -79,4 +79,6 @@
 		<property name="package.file" location="${package.dir}.zip" />
 		<property name="executable.file" location="${package.dir}/goxgui.exe" />
 
-		<mkdir 
+		<mkdir dir="${build.dir}" />
+
+		<property name="spec.file" location="${
