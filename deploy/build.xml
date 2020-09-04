@@ -81,4 +81,5 @@
 
 		<mkdir dir="${build.dir}" />
 
-		<property name="spec.file" location="${
+		<property name="spec.file" location="${build.win.dir}/build.spec" />
+		<copy file="build_win.spec" tofile="${spec
