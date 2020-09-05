@@ -86,4 +86,4 @@
 
 		<replace file="${spec.file}">
 			<replacefilter token="@goxgui.dir@" value="${goxgui.dir}" />
-			<rep
+			<replacefilter token="@goxtool.dir@" value="${goxtool.dir}" />
