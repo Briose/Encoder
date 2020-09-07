@@ -87,4 +87,5 @@
 		<replace file="${spec.file}">
 			<replacefilter token="@goxgui.dir@" value="${goxgui.dir}" />
 			<replacefilter token="@goxtool.dir@" value="${goxtool.dir}" />
-			<replacefilter token="@executable.file@" value="${executable.f
+			<replacefilter token="@executable.file@" value="${executable.file}" />
+			<replacefilter token="@icon.file@" value="${
