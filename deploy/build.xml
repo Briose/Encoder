@@ -88,4 +88,7 @@
 			<replacefilter token="@goxgui.dir@" value="${goxgui.dir}" />
 			<replacefilter token="@goxtool.dir@" value="${goxtool.dir}" />
 			<replacefilter token="@executable.file@" value="${executable.file}" />
-			<replacefilter token="@icon.file@" value="${
+			<replacefilter token="@icon.file@" value="${icon.file}" />
+		</replace>
+		
+		<!-- dirty hack to make windows paths in the script p
