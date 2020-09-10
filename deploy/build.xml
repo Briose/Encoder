@@ -91,4 +91,5 @@
 			<replacefilter token="@icon.file@" value="${icon.file}" />
 		</replace>
 		
-		<!-- dirty hack to make windows paths in the script p
+		<!-- dirty hack to make windows paths in the script python-compatible --> 
+		<replaceregexp file="${spec.file}" match
