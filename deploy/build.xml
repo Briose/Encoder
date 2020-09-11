@@ -95,4 +95,6 @@
 		<replaceregexp file="${spec.file}" match="\\" replace="\\\\\\\\" flags="g" />
 
 		<exec executable="${python_executable.file}">
-			<arg value="${pyinstaller_
+			<arg value="${pyinstaller_script.file}" />
+			<arg value="${spec.file}" />
+		</exec>
