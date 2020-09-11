@@ -98,3 +98,5 @@
 			<arg value="${pyinstaller_script.file}" />
 			<arg value="${spec.file}" />
 		</exec>
+
+		<copy file="${src.dir}/gpl-3.0.txt" todir="${package.
