@@ -99,4 +99,6 @@
 			<arg value="${spec.file}" />
 		</exec>
 
-		<copy file="${src.dir}/gpl-3.0.txt" todir="${package.
+		<copy file="${src.dir}/gpl-3.0.txt" todir="${package.dir}" verbose="true" />
+			
+		<zip destfile="${package.
