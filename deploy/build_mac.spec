@@ -1,3 +1,4 @@
 # -*- mode: python -*-
 
-# dynamica
+# dynamically find site-packages dir
+# see http://stackoverflow.com/questions/1223
