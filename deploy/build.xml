@@ -103,4 +103,8 @@
 			
 		<zip destfile="${package.file}">
 			<zipfileset dir="${package.dir}" filemode="755" />
-		</z
+		</zip>
+		
+	</target>
+
+</project>
