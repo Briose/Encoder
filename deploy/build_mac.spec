@@ -8,4 +8,8 @@ a = Analysis([os.path.join('@goxgui.dir@', 'application.py')],
              pathex=['@goxtool.dir@', os.path.join(get_python_lib(), 'Crypto')])
 
 # libQtCLucene is in a special location
-# see http://www.pyinstaller.org/ticket/
+# see http://www.pyinstaller.org/ticket/595
+             
+pyz = PYZ(a.pure)
+exe = EXE(pyz,
+          a.sc
