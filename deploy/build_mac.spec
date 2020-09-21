@@ -5,4 +5,6 @@
 from distutils.sysconfig import get_python_lib
 
 a = Analysis([os.path.join('@goxgui.dir@', 'application.py')],
-             pathex=['@goxtool
+             pathex=['@goxtool.dir@', os.path.join(get_python_lib(), 'Crypto')])
+
+# libQtCLucene
