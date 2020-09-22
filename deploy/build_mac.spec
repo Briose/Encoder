@@ -12,4 +12,5 @@ a = Analysis([os.path.join('@goxgui.dir@', 'application.py')],
              
 pyz = PYZ(a.pure)
 exe = EXE(pyz,
-          a.sc
+          a.scripts,
+          a.binaries + [('libQtCLucene.4.dylib', '/usr
