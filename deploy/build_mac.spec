@@ -18,4 +18,8 @@ exe = EXE(pyz,
           a.datas + [('bitcoin.png', '@icon.file@', 'DATA')],
           a.dependencies,
           name='@executable.file@',
-          debug=Fals
+          debug=False,
+          strip=None,
+          upx=True,
+          console=False)
+
