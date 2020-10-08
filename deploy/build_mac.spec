@@ -16,4 +16,6 @@ exe = EXE(pyz,
           a.binaries + [('libQtCLucene.4.dylib', '/usr/lib/libQtCLucene.4.dylib', 'BINARY')],
           a.zipfiles,
           a.datas + [('bitcoin.png', '@icon.file@', 'DATA')],
-          a.depe
+          a.dependencies,
+          name='@executable.file@',
+          debug=Fals
