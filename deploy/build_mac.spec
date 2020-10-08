@@ -23,3 +23,6 @@ exe = EXE(pyz,
           upx=True,
           console=False)
 
+app = BUNDLE(exe,
+             name='@app.file@',
+           
