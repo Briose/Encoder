@@ -1,3 +1,4 @@
 # -*- mode: python -*-
 
-# dynamically find
+# dynamically find site-packages dir
+# see http://stackoverflow.com/questi
