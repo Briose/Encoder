@@ -9,4 +9,7 @@ a = Analysis([os.path.join('@goxgui.dir@', 'application.py')],
 
 pyz = PYZ(a.pure)
 exe = EXE(pyz,
-          a.scrip
+          a.scripts,
+          a.binaries,
+          a.zipfiles,
+     
