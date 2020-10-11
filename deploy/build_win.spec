@@ -13,4 +13,6 @@ exe = EXE(pyz,
           a.binaries,
           a.zipfiles,
           a.datas + [('bitcoin.png', '@icon.file@', 'DATA')],
-     
+          a.dependencies,
+          name='@executable.file@',
+          debu
