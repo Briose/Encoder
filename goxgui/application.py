@@ -42,3 +42,36 @@ class Application(QApplication):
     def __init__(self, *args):
 
         QApplication.__init__(self, *args)
+
+        # initialize logging
+        logging.basicConfig(filename='log.txt', level=logging.INFO,
+            format='%(asctime)s %(message)s')
+        logging.info('Starting application.')
+
+        # initialize user preferences
+        preferences = Preferences()
+
+        # initialize model
+        market = Market(preferences)
+
+        # initialize view
+        self.view = View(preferences, market)
+
+        self.connect(self, SIGNAL('lastWindowClosed()'), self.__quit)
+
+    def __quit(self):
+        self.view.stop()
+
+
+if __name__ == '__main__':
+
+    try:
+
+        test = utilities.get_platform()
+        app = Application(sys.argv)
+        app.setWindowIcon(QIcon(utilities.resource_path('bitcoin.png')))
+        app.exec_()
+
+    except Exception as e:
+        logging.error(traceback.format_exc())
+        raise
