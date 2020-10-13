@@ -5,3 +5,5 @@ class Currency(object):
 
     # The amount of decimals is used when rendering the currency.
     # Also used to determine the size of a pip.
+    # All currencies not listed here will have 5 decimals.
+ 
