@@ -14,4 +14,5 @@ class Currency(object):
 
     def __init__(self, symbol):
 
-    
+        if symbol in self.__DECIMALS:
+            self.__deci
