@@ -8,4 +8,10 @@ class Currency(object):
     # All currencies not listed here will have 5 decimals.
     __DECIMALS = {
         'BTC': 8,
-        'JPY': 
+        'JPY': 3,
+        'SEK': 3,
+        }
+
+    def __init__(self, symbol):
+
+    
