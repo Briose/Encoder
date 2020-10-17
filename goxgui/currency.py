@@ -17,4 +17,8 @@ class Currency(object):
         if symbol in self.__DECIMALS:
             self.__decimals = Currency.__DECIMALS[symbol]
         else:
-            self.__de
+            self.__decimals = 5
+
+        self.__symbol = symbol
+
+    def __eq__(self, other
