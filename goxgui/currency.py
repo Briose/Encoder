@@ -24,4 +24,8 @@ class Currency(object):
     def __eq__(self, other):
         return self.symbol == other.symbol
 
-    def get_sy
+    def get_symbol(self):
+        return self.__symbol
+
+    def get_decimals(self):
+  
