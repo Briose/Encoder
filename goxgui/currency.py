@@ -28,4 +28,7 @@ class Currency(object):
         return self.__symbol
 
     def get_decimals(self):
-  
+        return self.__decimals
+
+    def __str__(self):
+        return
