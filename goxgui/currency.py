@@ -31,4 +31,7 @@ class Currency(object):
         return self.__decimals
 
     def __str__(self):
-        return
+        return self.symbol
+
+    symbol = property(get_symbol, None, None, None)
+    decima
