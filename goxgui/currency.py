@@ -34,4 +34,4 @@ class Currency(object):
         return self.symbol
 
     symbol = property(get_symbol, None, None, None)
-    decima
+    decimals = property(get_decimals, None, None, None)
