@@ -1,1 +1,1 @@
-from PyQ
+from PyQt4.QtCore import QAbstractTableModel, QVariant, Qt, SIGNAL, p
