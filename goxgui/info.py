@@ -12,4 +12,5 @@ class Info(QAbstractTableModel):
     __ROWS = 2
     __COLS = 6
 
-    __
+    __COLOR_DEFAULT = QColor(255, 255, 255)
+    __COLOR_B
