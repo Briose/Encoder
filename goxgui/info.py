@@ -4,4 +4,6 @@ from preferences import Preferences
 import money
 
 
-class Info(QAbstractTableMo
+class Info(QAbstractTableModel):
+    '''
+    Model that represents a table wit
