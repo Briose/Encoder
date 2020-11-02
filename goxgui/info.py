@@ -6,4 +6,10 @@ import money
 
 class Info(QAbstractTableModel):
     '''
-    Model that represents a table wit
+    Model that represents a table with various information.
+    '''
+
+    __ROWS = 2
+    __COLS = 6
+
+    __
