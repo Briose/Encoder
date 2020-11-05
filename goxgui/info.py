@@ -14,4 +14,7 @@ class Info(QAbstractTableModel):
 
     __COLOR_DEFAULT = QColor(255, 255, 255)
     __COLOR_BID_ASK = QColor(240, 255, 240)
-    __COLOR_BALANCE = QColor(
+    __COLOR_BALANCE = QColor(240, 240, 255)
+    __COLOR_ORDERLAG = QColor(237, 243, 254)
+
+    signal
