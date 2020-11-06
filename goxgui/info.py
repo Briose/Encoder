@@ -17,4 +17,5 @@ class Info(QAbstractTableModel):
     __COLOR_BALANCE = QColor(240, 240, 255)
     __COLOR_ORDERLAG = QColor(237, 243, 254)
 
-    signal
+    signal_base_balance_clicked = pyqtSignal()
+    signal_quote_balance_cli
