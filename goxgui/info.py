@@ -20,4 +20,5 @@ class Info(QAbstractTableModel):
     signal_base_balance_clicked = pyqtSignal()
     signal_quote_balance_clicked = pyqtSignal()
 
-    def __init__(self, parent, preferences, signal_c
+    def __init__(self, parent, preferences, signal_clicked):
+        QAbstractTableModel.__init__(self
