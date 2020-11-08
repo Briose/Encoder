@@ -21,4 +21,6 @@ class Info(QAbstractTableModel):
     signal_quote_balance_clicked = pyqtSignal()
 
     def __init__(self, parent, preferences, signal_clicked):
-        QAbstractTableModel.__init__(self
+        QAbstractTableModel.__init__(self, parent)
+
+        # initialize data array with empty strings
