@@ -26,4 +26,5 @@ class Info(QAbstractTableModel):
         # initialize data array with empty strings
         self.__data = [['' for i in range(self.__COLS)] for j in range(self.__ROWS)]  # @UnusedVariable @IgnorePep8
 
-        # initialize col
+        # initialize color array with default color
+        self.__color = 
