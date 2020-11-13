@@ -24,4 +24,6 @@ class Info(QAbstractTableModel):
         QAbstractTableModel.__init__(self, parent)
 
         # initialize data array with empty strings
-        self.__data = [['' for i in range(self.__COLS)] for j
+        self.__data = [['' for i in range(self.__COLS)] for j in range(self.__ROWS)]  # @UnusedVariable @IgnorePep8
+
+        # initialize col
