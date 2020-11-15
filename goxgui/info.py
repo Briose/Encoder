@@ -29,4 +29,6 @@ class Info(QAbstractTableModel):
         # initialize color array with default color
         self.__color = [[self.__COLOR_DEFAULT for i in range(self.__COLS)] for j in range(self.__ROWS)]  # @UnusedVariable @IgnorePep8
 
-        sel
+        self.__preferences = preferences
+
+        # initialize non-chang
