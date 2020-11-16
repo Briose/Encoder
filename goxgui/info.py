@@ -32,4 +32,6 @@ class Info(QAbstractTableModel):
         self.__preferences = preferences
 
         # initialize non-changing cell texts and colors
-        self.__set_data(0, 0, "
+        self.__set_data(0, 0, "Crypto balance:")
+        self.__set_data(1, 0, "Fiat balance:")
+#         self.__se
