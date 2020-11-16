@@ -31,4 +31,5 @@ class Info(QAbstractTableModel):
 
         self.__preferences = preferences
 
-        # initialize non-chang
+        # initialize non-changing cell texts and colors
+        self.__set_data(0, 0, "
