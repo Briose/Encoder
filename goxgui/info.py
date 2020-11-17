@@ -35,4 +35,5 @@ class Info(QAbstractTableModel):
         self.__set_data(0, 0, "Crypto balance:")
         self.__set_data(1, 0, "Fiat balance:")
 #         self.__set_color(0, 0, self.__COLOR_BALANCE)
-#         self._
+#         self.__set_color(0, 1, self.__COLOR_BALANCE)
+#         self.__set_co
