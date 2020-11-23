@@ -42,4 +42,5 @@ class Info(QAbstractTableModel):
         self.__set_data(0, 2, "Trading lag:")
         self.__set_color(0, 2, self.__COLOR_ORDERLAG)
         self.__set_color(0, 3, self.__COLOR_ORDERLAG)
-        self.__s
+        self.__set_color(1, 2, self.__COLOR_ORDERLAG)
+        self.__set_color(1, 3, self
