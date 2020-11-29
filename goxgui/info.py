@@ -48,4 +48,5 @@ class Info(QAbstractTableModel):
         self.__set_data(0, 4, "Bid:")
         self.__set_data(1, 4, "Ask:")
 #         self.__set_color(0, 4, self.__COLOR_BID_ASK)
-#         self.__set_color(0, 5, s
+#         self.__set_color(0, 5, self.__COLOR_BID_ASK)
+#         self.__set_color(1, 4, self.__COLOR_BID_AS
