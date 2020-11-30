@@ -52,4 +52,5 @@ class Info(QAbstractTableModel):
 #         self.__set_color(1, 4, self.__COLOR_BID_ASK)
 #         self.__set_color(1, 5, self.__COLOR_BID_ASK)
 
-        # liste
+        # listen for clicks
+        signal_clicked.connect(self.
