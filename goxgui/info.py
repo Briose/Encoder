@@ -58,3 +58,5 @@ class Info(QAbstractTableModel):
     # private methods
 
     def __set_data(self, row, col, text):
+        self.__data[row][col] = text
+        self.emit(SIGNAL("layoutCh
