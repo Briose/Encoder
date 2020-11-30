@@ -59,4 +59,7 @@ class Info(QAbstractTableModel):
 
     def __set_data(self, row, col, text):
         self.__data[row][col] = text
-        self.emit(SIGNAL("layoutCh
+        self.emit(SIGNAL("layoutChanged()"))
+
+    def __set_color(self, row, col, color):
+        self.__c
