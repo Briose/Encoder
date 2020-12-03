@@ -64,3 +64,7 @@ class Info(QAbstractTableModel):
     def __set_color(self, row, col, color):
         self.__color[row][col] = color
         self.emit(SIGNAL("layoutChanged()"))
+
+    def __slot_clicked(self, index):
+        row = index.row()
+ 
