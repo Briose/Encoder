@@ -62,4 +62,5 @@ class Info(QAbstractTableModel):
         self.emit(SIGNAL("layoutChanged()"))
 
     def __set_color(self, row, col, color):
-        self.__c
+        self.__color[row][col] = color
+        self.emit(SIGNAL("layoutChanged()"))
