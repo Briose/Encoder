@@ -69,4 +69,6 @@ class Info(QAbstractTableModel):
         row = index.row()
         col = index.column()
 
-        if row == 0 and (col == 0 or col ==
+        if row == 0 and (col == 0 or col == 1):
+            self.signal_base_balance_clicked.emit()
+       
