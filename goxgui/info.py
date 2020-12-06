@@ -67,4 +67,6 @@ class Info(QAbstractTableModel):
 
     def __slot_clicked(self, index):
         row = index.row()
- 
+        col = index.column()
+
+        if row == 0 and (col == 0 or col ==
