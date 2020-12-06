@@ -71,4 +71,7 @@ class Info(QAbstractTableModel):
 
         if row == 0 and (col == 0 or col == 1):
             self.signal_base_balance_clicked.emit()
-       
+            return
+
+        if row == 1 and (col == 0 or col == 1):
+            
