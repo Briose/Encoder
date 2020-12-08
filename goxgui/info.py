@@ -86,3 +86,8 @@ class Info(QAbstractTableModel):
             Preferences.CURRENCY_INDEX_QUOTE)
 
     # Qt methods
+
+    def rowCount(self, parent):
+        return self.__ROWS
+
+    def co
