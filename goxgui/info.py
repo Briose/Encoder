@@ -77,4 +77,5 @@ class Info(QAbstractTableModel):
             self.signal_quote_balance_clicked.emit()
             return
 
-    def
+    def __get_base_currency(self):
+        return self.__preferences.get_cur
