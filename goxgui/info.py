@@ -82,4 +82,7 @@ class Info(QAbstractTableModel):
             Preferences.CURRENCY_INDEX_BASE)
 
     def __get_quote_currency(self):
-        return self.__preferences.get_cu
+        return self.__preferences.get_currency(
+            Preferences.CURRENCY_INDEX_QUOTE)
+
+    # Qt methods
