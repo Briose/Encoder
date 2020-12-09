@@ -90,4 +90,7 @@ class Info(QAbstractTableModel):
     def rowCount(self, parent):
         return self.__ROWS
 
-    def co
+    def columnCount(self, parent):
+        return self.__COLS
+
+    def data(
