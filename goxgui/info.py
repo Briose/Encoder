@@ -96,4 +96,7 @@ class Info(QAbstractTableModel):
     def data(self, index, role):
 
         row = index.row()
-        co
+        col = index.column()
+
+        if role == Qt.TextAlignmentRole:
+    
