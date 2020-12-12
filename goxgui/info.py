@@ -102,4 +102,7 @@ class Info(QAbstractTableModel):
             if col % 2 == 0:
                 return Qt.AlignRight | Qt.AlignVCenter
             else:
-                retu
+                return Qt.AlignLeft | Qt.AlignVCenter
+
+        if role == Qt.BackgroundRole:
+  
