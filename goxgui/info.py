@@ -99,4 +99,5 @@ class Info(QAbstractTableModel):
         col = index.column()
 
         if role == Qt.TextAlignmentRole:
-    
+            if col % 2 == 0:
+                return Qt.AlignRight | 
