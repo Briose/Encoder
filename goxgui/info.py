@@ -100,4 +100,6 @@ class Info(QAbstractTableModel):
 
         if role == Qt.TextAlignmentRole:
             if col % 2 == 0:
-                return Qt.AlignRight | 
+                return Qt.AlignRight | Qt.AlignVCenter
+            else:
+                retu
