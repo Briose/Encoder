@@ -105,4 +105,5 @@ class Info(QAbstractTableModel):
                 return Qt.AlignLeft | Qt.AlignVCenter
 
         if role == Qt.BackgroundRole:
-  
+            if col % 2 == 1:
+                return self.__COLOR_D
