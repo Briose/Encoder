@@ -106,4 +106,6 @@ class Info(QAbstractTableModel):
 
         if role == Qt.BackgroundRole:
             if col % 2 == 1:
-                return self.__COLOR_D
+                return self.__COLOR_DEFAULT
+            else:
+                return self.__C
