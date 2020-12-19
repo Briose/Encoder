@@ -113,4 +113,8 @@ class Info(QAbstractTableModel):
         if (not index.isValid()) or (role != Qt.DisplayRole):
             return QVariant()
 
-        return QVariant(
+        return QVariant(self.__data[row][col])
+
+    # public methods
+
+    def set_wallet
