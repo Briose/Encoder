@@ -108,4 +108,6 @@ class Info(QAbstractTableModel):
             if col % 2 == 1:
                 return self.__COLOR_DEFAULT
             else:
-                return self.__C
+                return self.__COLOR_ORDERLAG
+
+        if (not index.isValid()) or (role != 
