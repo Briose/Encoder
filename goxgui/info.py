@@ -110,4 +110,7 @@ class Info(QAbstractTableModel):
             else:
                 return self.__COLOR_ORDERLAG
 
-        if (not index.isValid()) or (role != 
+        if (not index.isValid()) or (role != Qt.DisplayRole):
+            return QVariant()
+
+        return QVariant(
