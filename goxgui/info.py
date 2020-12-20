@@ -120,4 +120,6 @@ class Info(QAbstractTableModel):
     def set_wallet_a(self, value):
 
         if value == None:
-         
+            text = 'n/a'
+        else:
+            text = money.to_long_st
