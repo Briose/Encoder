@@ -126,4 +126,7 @@ class Info(QAbstractTableModel):
 
         self.__set_data(0, 1, text)
 
-    def set_wallet_b(self, 
+    def set_wallet_b(self, value):
+
+        if value == None:
+            text
