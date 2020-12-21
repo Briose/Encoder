@@ -124,4 +124,6 @@ class Info(QAbstractTableModel):
         else:
             text = money.to_long_string(value, self.__get_base_currency())
 
-    
+        self.__set_data(0, 1, text)
+
+    def set_wallet_b(self, 
