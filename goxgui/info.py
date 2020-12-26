@@ -133,4 +133,6 @@ class Info(QAbstractTableModel):
         else:
             text = money.to_long_string(value, self.__get_quote_currency())
 
-        self.__set_
+        self.__set_data(1, 1, text)
+
+    def set_ticker_bid(self, value
