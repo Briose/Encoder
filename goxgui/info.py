@@ -135,4 +135,9 @@ class Info(QAbstractTableModel):
 
         self.__set_data(1, 1, text)
 
-    def set_ticker_bid(self, value
+    def set_ticker_bid(self, value):
+
+        if value == None:
+            text = 'n/a'
+        else:
+     
