@@ -140,4 +140,4 @@ class Info(QAbstractTableModel):
         if value == None:
             text = 'n/a'
         else:
-     
+            text = money.to_long_string(value, self.__get_quote_curren
