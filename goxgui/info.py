@@ -144,4 +144,7 @@ class Info(QAbstractTableModel):
 
         self.__set_data(0, 5, text)
 
-    def set
+    def set_ticker_ask(self, value):
+
+        if value == None:
+        
