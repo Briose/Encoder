@@ -147,4 +147,6 @@ class Info(QAbstractTableModel):
     def set_ticker_ask(self, value):
 
         if value == None:
-        
+            text = 'n/a'
+        else:
+            text = money.to_long_string(val
