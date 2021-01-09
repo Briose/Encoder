@@ -154,4 +154,4 @@ class Info(QAbstractTableModel):
         self.__set_data(1, 5, text)
 
     def set_orderlag(self, ms):
-        self.__set
+        self.__set_data(0, 3, '{:.3f} s'.format(float(ms) / 1000000))
