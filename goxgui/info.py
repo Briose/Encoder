@@ -151,4 +151,7 @@ class Info(QAbstractTableModel):
         else:
             text = money.to_long_string(value, self.__get_quote_currency())
 
-        self.__s
+        self.__set_data(1, 5, text)
+
+    def set_orderlag(self, ms):
+        self.__set
