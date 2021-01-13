@@ -202,3 +202,68 @@ class Market(QObject):
             self.signal_bid.emit(price, total_vol)
 
     def __slot_orderlag(self, dummy, (ms, text)):
+        self.signal_orderlag.emit(ms, text)
+
+    def __slot_wallet_changed(self, dummy, (text)):
+        self.signal_wallet.emit()
+
+    def __slot_userorder(self, dummy, data):
+
+        (price, size, order_type, oid, status_message) = data
+
+        price = self.__to_internal(Preferences.CURRENCY_INDEX_QUOTE, price)
+        size = self.__to_internal(Preferences.CURRENCY_INDEX_BASE, size)
+
+        self.signal_userorder.emit(
+            price, size, order_type, oid, status_message)
+
+    # start public methods
+
+    def start(self):
+        '''
+        Activates the market
+        '''
+        self.gox = self.__create_gox()
+        self.gox.start()
+
+    def stop(self):
+        '''
+        Deactivates the market
+        '''
+        self.gox.stop()
+        del self.gox
+        time.sleep(1)
+
+    def buy(self, price, size):
+        '''
+        Places buy order
+        '''
+        price = self.__to_external(Preferences.CURRENCY_INDEX_QUOTE, price)
+        size = self.__to_external(Preferences.CURRENCY_INDEX_BASE, size)
+        self.gox.buy(price, size)
+
+    def sell(self, price, size):
+        '''
+        Places sell order
+        '''
+        price = self.__to_external(Preferences.CURRENCY_INDEX_QUOTE, price)
+        size = self.__to_external(Preferences.CURRENCY_INDEX_BASE, size)
+        self.gox.sell(price, size)
+
+    def cancel(self, order_id):
+        '''
+        Cancels order
+        '''
+        self.gox.cancel(order_id)
+
+    def get_balance(self, index):
+        '''
+        Returns the account balance for the currency with the specified index.
+        @param index: base or quote
+        @return: the balance or None if no balance available for this currency
+        '''
+        symbol = self.__preferences.get_currency(index).symbol
+        if not symbol in self.gox.wallet:
+            return None
+
+        return self.__to_internal(index, self.gox.wallet[symbol])
