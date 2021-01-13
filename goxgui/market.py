@@ -135,3 +135,70 @@ class Market(QObject):
         return 3
 
     def __to_internal(self, index, value):
+        '''
+        Converts an external money value into an internal money value.
+        '''
+        return long(value) * pow(10, self.__get_currency_shift(index))
+
+    def __to_external(self, index, value):
+        '''
+        Converts an internal money value into an external money value.
+        '''
+        return value / pow(10, self.__get_currency_shift(index))
+
+    def __slot_log(self, dummy, (text)):
+        self.signal_log.emit(text)
+
+    def __slot_fulldepth(self, dummy, data):
+        self.signal_bids.emit(self.__convert_orders(self.gox.orderbook.bids))
+        self.signal_asks.emit(self.__convert_orders(self.gox.orderbook.asks))
+
+    def __convert_orders(self, data):
+
+        out = []
+        for i in data:
+            price = self.__to_internal(
+                Preferences.CURRENCY_INDEX_QUOTE, i.price)
+            volume = self.__to_internal(
+                Preferences.CURRENCY_INDEX_BASE, i.volume)
+            out.append([price, volume])
+        return out
+
+    def __slot_ticker(self, dummy, data):
+        (bid, ask) = data
+        bid = self.__to_internal(
+            Preferences.CURRENCY_INDEX_QUOTE, bid)
+        ask = self.__to_internal(
+            Preferences.CURRENCY_INDEX_QUOTE, ask)
+        self.signal_ticker.emit(bid, ask)
+
+    def __slot_trade(self, dummy, data):
+        (dummy_date, price, size, typ, own) = data
+        if (own):
+            return
+
+        price = self.__to_internal(Preferences.CURRENCY_INDEX_QUOTE, price)
+        size = self.__to_internal(Preferences.CURRENCY_INDEX_BASE, size)
+
+        if typ == 'bid':
+            typ = Market.TYPE_BID
+        if typ == 'ask':
+            typ = Market.TYPE_ASK
+
+        self.signal_trade.emit(price, size, typ)
+
+    def __slot_depth(self, dummy, data):
+
+        (typ, price, _voldiff, total_vol) = data
+
+        price = self.__to_internal(
+            Preferences.CURRENCY_INDEX_QUOTE, price)
+        total_vol = self.__to_internal(
+            Preferences.CURRENCY_INDEX_BASE, total_vol)
+
+        if typ == "ask":
+            self.signal_ask.emit(price, total_vol)
+        if typ == "bid":
+            self.signal_bid.emit(price, total_vol)
+
+    def __slot_orderlag(self, dummy, (ms, text)):
