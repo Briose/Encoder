@@ -9,3 +9,75 @@ class Model(QAbstractTableModel):
     '''
     Adapter that makes orders accessible to Qt.
     '''
+
+    def __init__(self, parent, orders, preferences):
+        QAbstractTableModel.__init__(self, parent)
+
+        # Stale order book objects have to be deleted, otherwise
+        # they will still receive and process signals from the market
+        # and slow down the application.
+        # Because Qt doesn't release the model properly,
+        # we use a weak reference here to keep control
+        # over the deletion of the order book.
+        self.__orders = weakref.proxy(orders)
+
+        self.__base_currency = preferences.get_currency(
+                    Preferences.CURRENCY_INDEX_BASE)
+
+        self.__quote_currency = preferences.get_currency(
+                    Preferences.CURRENCY_INDEX_QUOTE)
+
+        (self.__headers, self.__getters) = self.__create_columns(preferences)
+
+        self.__orders.signal_changed.connect(self.__slot_update)
+
+    # private methods
+
+    def __create_columns(self, preferences):
+        '''
+        Creates headers and getter methods for the column data
+        based on the specified preferences.
+        '''
+
+        headers = []
+        getters = []
+
+        if preferences.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_PRICE):
+
+            headers.append('Price {}'.format(
+                self.__quote_currency.symbol))
+            getters.append(lambda index:
+                [self.__orders.get_price(index), self.__quote_currency])
+
+        if preferences.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_SIZE):
+
+            headers.append('Size {}'.format(
+                self.__base_currency.symbol))
+            getters.append(lambda index:
+                [self.__orders.get_volume(index), self.__base_currency])
+
+        if preferences.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_TOTAL_SIZE):
+
+            headers.append('Total Size {}'.format(
+                self.__base_currency.symbol))
+            getters.append(lambda index:
+                [self.__orders.get_total(index), self.__base_currency])
+
+        if preferences.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_QUOTE):
+
+            headers.append('Quote {}'.format(
+                self.__quote_currency.symbol))
+            getters.append(lambda index:
+                [self.__orders.get_quote(index), self.__quote_currency])
+
+        if preferences.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_TOTAL_QUOTE):
+
+            headers.append('Total Quote {}'.format(
+                self.__quote_currency.symbol))
+            getters.append(lambda index:
+                [self.__orders.get_total_quote(index), self.__quote_currency])
