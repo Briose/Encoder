@@ -81,3 +81,35 @@ class Model(QAbstractTableModel):
                 self.__quote_currency.symbol))
             getters.append(lambda index:
                 [self.__orders.get_total_quote(index), self.__quote_currency])
+
+        return headers, getters
+
+    def __slot_update(self):
+        self.emit(SIGNAL("layoutChanged()"))
+
+    def __get_header(self):
+        return self.__headers
+
+    # Qt methods
+
+    def rowCount(self, parent):
+        return self.__orders.size()
+
+    def columnCount(self, parent):
+        return len(self.__get_header())
+
+    def data(self, index, role):
+
+        if role == Qt.TextAlignmentRole:
+            return Qt.AlignRight | Qt.AlignVCenter
+
+        if (not index.isValid()) or (role != Qt.DisplayRole):
+            return QVariant()
+
+        (value, currency) = self.__getters[index.column()](index.row())
+        return QVariant(money.to_string(value, currency))
+
+    def headerData(self, col, orientation, role):
+        if orientation == Qt.Horizontal and role == Qt.DisplayRole:
+            return QVariant(self.__get_header()[col])
+        return QVariant()
