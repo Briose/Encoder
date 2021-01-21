@@ -6,4 +6,7 @@ import money
 
 class Orders(QObject):
     '''
-    Represents a collection of 
+    Represents a collection of ask or bid orders, grouped by levels.
+    '''
+
+    signal_changed = pyqt
