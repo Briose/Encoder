@@ -38,3 +38,18 @@ def multiply(valueA, valueB):
     Multiplies the money value with money value B
     '''
     return valueA * valueB / INTERNAL_FACTOR
+
+
+def divide(valueA, valueB):
+    '''
+    Divides monyey value A by money value B
+    '''
+    return valueA * INTERNAL_FACTOR / valueB
+
+
+def pip(currency):
+    '''
+    Returns a money value that is the equivalent of
+    one pip given the specified currency.
+    '''
+    return pow(10, INTERNAL_DECIMALS - currency.decimals)
