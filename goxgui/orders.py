@@ -16,4 +16,5 @@ class Orders(QObject):
 
         self.__typ = typ
 
-        
+        self.__market = market
+        self.__market.signa
