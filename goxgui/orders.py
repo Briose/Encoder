@@ -12,4 +12,8 @@ class Orders(QObject):
     signal_changed = pyqtSignal()
 
     def __init__(self, market, typ, grouping=0):
-      
+        QObject.__init__(self)
+
+        self.__typ = typ
+
+        
