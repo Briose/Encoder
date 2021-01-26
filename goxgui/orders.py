@@ -17,4 +17,5 @@ class Orders(QObject):
         self.__typ = typ
 
         self.__market = market
-        self.__market.signa
+        self.__market.signal_trade.connect(self.__slot_trade)
+        self.__mar
