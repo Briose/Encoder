@@ -18,4 +18,6 @@ class Orders(QObject):
 
         self.__market = market
         self.__market.signal_trade.connect(self.__slot_trade)
-        self.__mar
+        self.__market.signal_ticker.connect(self.__slot_ticker)
+
+        i
