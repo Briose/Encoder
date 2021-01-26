@@ -20,4 +20,6 @@ class Orders(QObject):
         self.__market.signal_trade.connect(self.__slot_trade)
         self.__market.signal_ticker.connect(self.__slot_ticker)
 
-        i
+        if typ == Market.TYPE_BID:
+
+            self.__market.signal_bid.conn
