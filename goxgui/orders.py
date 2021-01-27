@@ -22,4 +22,5 @@ class Orders(QObject):
 
         if typ == Market.TYPE_BID:
 
-            self.__market.signal_bid.conn
+            self.__market.signal_bid.connect(self.__slot_depth)
+            self.__market.signal_bi
