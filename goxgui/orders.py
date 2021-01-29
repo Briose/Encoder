@@ -24,4 +24,6 @@ class Orders(QObject):
 
             self.__market.signal_bid.connect(self.__slot_depth)
             self.__market.signal_bids.connect(self.__slot_depths)
-            se
+            self.__compare = lambda x, y: x > y
+
+        elif typ == Market
