@@ -30,3 +30,6 @@ class Orders(QObject):
 
             self.__market.signal_ask.connect(self.__slot_depth)
             self.__market.signal_asks.connect(self.__slot_depths)
+            self.__compare = lambda x, y: x < y
+
+        el
