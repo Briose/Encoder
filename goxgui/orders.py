@@ -28,4 +28,5 @@ class Orders(QObject):
 
         elif typ == Market.TYPE_ASK:
 
-            self.__market.signal_ask.connect(self.__slot_dept
+            self.__market.signal_ask.connect(self.__slot_depth)
+            self.__market.signal_asks.connect(self.__slot_depths)
