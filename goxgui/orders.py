@@ -32,4 +32,5 @@ class Orders(QObject):
             self.__market.signal_asks.connect(self.__slot_depths)
             self.__compare = lambda x, y: x < y
 
-        el
+        else:
+            raise Exception('Invalid order book type {}.'.format(typ))
