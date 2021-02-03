@@ -44,4 +44,6 @@ class Orders(QObject):
 
     # private methods
 
-    def __slot_trade
+    def __slot_trade(self, price, volume, typ):
+
+        # if the trade is an ask it on
