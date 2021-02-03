@@ -38,4 +38,6 @@ class Orders(QObject):
         self.__levels = []
 
         if grouping == 0:
-           
+            self.__grouping = 1
+        else:
+            self.__grouping = m
