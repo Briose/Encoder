@@ -34,3 +34,8 @@ class Orders(QObject):
 
         else:
             raise Exception('Invalid order book type {}.'.format(typ))
+
+        self.__levels = []
+
+        if grouping == 0:
+           
