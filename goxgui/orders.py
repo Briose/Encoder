@@ -40,4 +40,8 @@ class Orders(QObject):
         if grouping == 0:
             self.__grouping = 1
         else:
-            self.__grouping = m
+            self.__grouping = money.to_money(grouping)
+
+    # private methods
+
+    def __slot_trade
