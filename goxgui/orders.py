@@ -49,4 +49,7 @@ class Orders(QObject):
         # if the trade is an ask it only affects the bids,
         # and if it is a bid it only affects the asks
         if (typ == self.__typ):
-            re
+            return
+
+        self.__delete_all(price)
+        index = self.__subtract
