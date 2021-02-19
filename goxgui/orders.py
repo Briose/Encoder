@@ -47,4 +47,6 @@ class Orders(QObject):
     def __slot_trade(self, price, volume, typ):
 
         # if the trade is an ask it only affects the bids,
-        # and if it is a bid it onl
+        # and if it is a bid it only affects the asks
+        if (typ == self.__typ):
+            re
