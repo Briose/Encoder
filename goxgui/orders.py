@@ -52,4 +52,6 @@ class Orders(QObject):
             return
 
         self.__delete_all(price)
-        index = self.__subtract
+        index = self.__subtract(price, volume)
+        self.__recalculate_totals(index)
+        self.signal_changed
