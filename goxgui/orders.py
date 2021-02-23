@@ -54,4 +54,7 @@ class Orders(QObject):
         self.__delete_all(price)
         index = self.__subtract(price, volume)
         self.__recalculate_totals(index)
-        self.signal_changed
+        self.signal_changed.emit()
+
+    def __slot_depths(self, depths):
+        for depth in de
