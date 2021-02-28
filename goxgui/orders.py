@@ -57,4 +57,6 @@ class Orders(QObject):
         self.signal_changed.emit()
 
     def __slot_depths(self, depths):
-        for depth in de
+        for depth in depths:
+            self.__update(depth[0], depth[1])
+        self.__recal
