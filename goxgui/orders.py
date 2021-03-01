@@ -62,4 +62,6 @@ class Orders(QObject):
         self.__recalculate_totals(0)
         self.signal_changed.emit()
 
-    def __slot_depth(
+    def __slot_depth(self, price, volume):
+
+        index = self.__update(price, 
