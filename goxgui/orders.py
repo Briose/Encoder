@@ -64,4 +64,6 @@ class Orders(QObject):
 
     def __slot_depth(self, price, volume):
 
-        index = self.__update(price, 
+        index = self.__update(price, volume)
+        self.__recalculate_totals(index)
+        
