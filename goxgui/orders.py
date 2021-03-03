@@ -68,4 +68,7 @@ class Orders(QObject):
         self.__recalculate_totals(index)
         self.signal_changed.emit()
 
-    def __slo
+    def __slot_ticker(self, bid, ask):
+
+        if self.__typ == Market.TYPE_BID:
+     
