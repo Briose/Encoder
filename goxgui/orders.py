@@ -71,4 +71,6 @@ class Orders(QObject):
     def __slot_ticker(self, bid, ask):
 
         if self.__typ == Market.TYPE_BID:
-     
+            self.__delete_all(bid)
+        else:
+         
