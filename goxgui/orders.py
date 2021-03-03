@@ -66,4 +66,6 @@ class Orders(QObject):
 
         index = self.__update(price, volume)
         self.__recalculate_totals(index)
-        
+        self.signal_changed.emit()
+
+    def __slo
