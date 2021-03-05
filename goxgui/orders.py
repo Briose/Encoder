@@ -73,4 +73,8 @@ class Orders(QObject):
         if self.__typ == Market.TYPE_BID:
             self.__delete_all(bid)
         else:
-         
+            self.__delete_all(ask)
+
+        self.__recalculate_totals(0)
+
+        s
