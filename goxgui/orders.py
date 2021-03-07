@@ -77,4 +77,7 @@ class Orders(QObject):
 
         self.__recalculate_totals(0)
 
-        s
+        self.signal_changed.emit()
+
+    def __update(self, price, volume):
+      
