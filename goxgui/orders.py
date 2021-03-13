@@ -80,4 +80,6 @@ class Orders(QObject):
         self.signal_changed.emit()
 
     def __update(self, price, volume):
-      
+        '''
+        Updates the volume for the specified price.
+        @return: the 
