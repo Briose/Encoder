@@ -88,4 +88,6 @@ class Orders(QObject):
         '''
         (index, level) = self.__find_level(price)
 
-        level.update(price,
+        level.update(price, volume)
+        if level.is_empty():
+            self.__levels.
