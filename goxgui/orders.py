@@ -83,4 +83,7 @@ class Orders(QObject):
         '''
         Updates the volume for the specified price.
         @return: the index of the affected level,
-        or the index of the ne
+        or the index of the next higher level,
+        if the affected level was deleted.
+        '''
+    
