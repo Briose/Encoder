@@ -82,4 +82,5 @@ class Orders(QObject):
     def __update(self, price, volume):
         '''
         Updates the volume for the specified price.
-        @return: the 
+        @return: the index of the affected level,
+        or the index of the ne
