@@ -90,4 +90,8 @@ class Orders(QObject):
 
         level.update(price, volume)
         if level.is_empty():
-            self.__levels.
+            self.__levels.remove(level)
+
+        return index
+
+    def __subtract(self, price
