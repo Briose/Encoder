@@ -94,4 +94,7 @@ class Orders(QObject):
 
         return index
 
-    def __subtract(self, price
+    def __subtract(self, price, volume):
+        '''
+        Subtracts the volume for the specified price.
+       
