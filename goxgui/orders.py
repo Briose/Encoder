@@ -97,4 +97,5 @@ class Orders(QObject):
     def __subtract(self, price, volume):
         '''
         Subtracts the volume for the specified price.
-       
+        or the index of the next higher level,
+        if the affe
