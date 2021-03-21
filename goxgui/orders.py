@@ -98,4 +98,6 @@ class Orders(QObject):
         '''
         Subtracts the volume for the specified price.
         or the index of the next higher level,
-        if the affe
+        if the affected level was deleted.
+        '''
+        (index, level) = self.__f
