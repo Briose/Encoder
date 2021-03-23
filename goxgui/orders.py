@@ -103,4 +103,5 @@ class Orders(QObject):
         (index, level) = self.__find_level(price)
 
         level.subtract(price, volume)
-        if
+        if level.is_empty():
+            self.__levels.remove(level
