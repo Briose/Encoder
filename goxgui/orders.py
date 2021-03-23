@@ -100,4 +100,7 @@ class Orders(QObject):
         or the index of the next higher level,
         if the affected level was deleted.
         '''
-        (index, level) = self.__f
+        (index, level) = self.__find_level(price)
+
+        level.subtract(price, volume)
+        if
