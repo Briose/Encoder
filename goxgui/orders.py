@@ -110,4 +110,5 @@ class Orders(QObject):
 
     def __delete_all(self, price):
         '''
-  
+        Deletes all orders below (type ascending)
+        or above (type
