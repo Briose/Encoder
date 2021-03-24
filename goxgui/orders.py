@@ -113,4 +113,7 @@ class Orders(QObject):
         Deletes all orders below (type ascending)
         or above (type descending) the specified price.
         '''
-        levels = 
+        levels = self.__levels
+        compare = self.__compare
+
+        whil
