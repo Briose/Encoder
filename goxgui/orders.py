@@ -116,4 +116,6 @@ class Orders(QObject):
         levels = self.__levels
         compare = self.__compare
 
-        whil
+        while len(levels) != 0:
+            level = levels[0]
+     
