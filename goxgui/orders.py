@@ -118,4 +118,5 @@ class Orders(QObject):
 
         while len(levels) != 0:
             level = levels[0]
-     
+            level.delete_all(compare, price)
+            if leve
