@@ -122,4 +122,7 @@ class Orders(QObject):
             if level.size() == 0:
                 levels.remove(level)
             else:
-       
+                break
+
+    def __recalculate_totals(self, index):
+  
