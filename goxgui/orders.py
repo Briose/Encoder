@@ -129,3 +129,8 @@ class Orders(QObject):
         Recalculates the totals of all levels, starting at the specified index.
         '''
         levels = self.__levels
+
+        if index == 0:
+            total = 0
+        else:
+           
