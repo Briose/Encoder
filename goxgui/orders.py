@@ -126,4 +126,6 @@ class Orders(QObject):
 
     def __recalculate_totals(self, index):
         '''
-        Recalculates the totals of all levels, startin
+        Recalculates the totals of all levels, starting at the specified index.
+        '''
+        levels = self.__levels
