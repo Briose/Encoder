@@ -133,4 +133,6 @@ class Orders(QObject):
         if index == 0:
             total = 0
         else:
-           
+            total = levels[index - 1].total
+
+        maximum = le
