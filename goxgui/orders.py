@@ -135,4 +135,6 @@ class Orders(QObject):
         else:
             total = levels[index - 1].total
 
-        maximum = le
+        maximum = len(levels)
+        for i in range(index, maximum):
+         
