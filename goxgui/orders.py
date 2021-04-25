@@ -137,4 +137,6 @@ class Orders(QObject):
 
         maximum = len(levels)
         for i in range(index, maximum):
-         
+            level = levels[i]
+            total += level.volume
+            l
