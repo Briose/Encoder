@@ -139,4 +139,8 @@ class Orders(QObject):
         for i in range(index, maximum):
             level = levels[i]
             total += level.volume
-            l
+            level.total = total
+
+    def __find_level(self, price):
+        '''
+        F
