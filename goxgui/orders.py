@@ -144,4 +144,5 @@ class Orders(QObject):
     def __find_level(self, price):
         '''
         Finds the level for the specified price. If no level exists,
-        inserts a
+        inserts a new level at the correct position.
+        Stolen from 
