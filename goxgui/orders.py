@@ -151,4 +151,7 @@ class Orders(QObject):
         grouping = self.__grouping
         key = price / grouping * grouping
         if price % grouping != 0:
-            key += grou
+            key += grouping
+        compare = self.__compare
+        levels = self.__levels
+       
