@@ -145,4 +145,7 @@ class Orders(QObject):
         '''
         Finds the level for the specified price. If no level exists,
         inserts a new level at the correct position.
-        Stolen from 
+        Stolen from goxtool ;)
+        @return: tuple (index, level)
+        '''
+        gro
