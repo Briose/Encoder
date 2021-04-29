@@ -148,4 +148,5 @@ class Orders(QObject):
         Stolen from goxtool ;)
         @return: tuple (index, level)
         '''
-        gro
+        grouping = self.__grouping
+        key = price / grouping * gro
