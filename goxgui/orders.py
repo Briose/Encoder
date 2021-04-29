@@ -149,4 +149,6 @@ class Orders(QObject):
         @return: tuple (index, level)
         '''
         grouping = self.__grouping
-        key = price / grouping * gro
+        key = price / grouping * grouping
+        if price % grouping != 0:
+            key += grou
