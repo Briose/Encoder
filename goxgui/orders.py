@@ -166,4 +166,7 @@ class Orders(QObject):
             elif compare(key, midval):
                 high = mid
             else:
-                return (mid
+                return (mid, levels[mid])
+
+        # not found - insert new level
+        level = L
