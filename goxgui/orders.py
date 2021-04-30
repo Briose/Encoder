@@ -154,4 +154,8 @@ class Orders(QObject):
             key += grouping
         compare = self.__compare
         levels = self.__levels
-       
+        low = 0
+        high = len(levels)
+
+        # binary search
+        w
