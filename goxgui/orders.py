@@ -160,4 +160,6 @@ class Orders(QObject):
         # binary search
         while low < high:
             mid = (low + high) / 2
-            midv
+            midval = levels[mid].key
+            if compare(midval, key):
+  
