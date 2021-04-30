@@ -162,4 +162,6 @@ class Orders(QObject):
             mid = (low + high) / 2
             midval = levels[mid].key
             if compare(midval, key):
-  
+                low = mid + 1
+            elif compare(key, midval):
+        
