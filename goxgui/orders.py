@@ -158,4 +158,6 @@ class Orders(QObject):
         high = len(levels)
 
         # binary search
-        w
+        while low < high:
+            mid = (low + high) / 2
+            midv
