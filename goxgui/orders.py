@@ -164,4 +164,6 @@ class Orders(QObject):
             if compare(midval, key):
                 low = mid + 1
             elif compare(key, midval):
-        
+                high = mid
+            else:
+                return (mid
