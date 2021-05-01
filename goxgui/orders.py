@@ -169,4 +169,7 @@ class Orders(QObject):
                 return (mid, levels[mid])
 
         # not found - insert new level
-        level = L
+        level = Level(key)
+        self.__levels.insert(low, level)
+
+        return (low, level)
