@@ -178,4 +178,5 @@ class Orders(QObject):
 
     def size(self):
         '''
- 
+        Returns the number of levels in this collection.
+  
