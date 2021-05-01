@@ -173,3 +173,9 @@ class Orders(QObject):
         self.__levels.insert(low, level)
 
         return (low, level)
+
+    # public methods
+
+    def size(self):
+        '''
+ 
