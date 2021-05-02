@@ -182,4 +182,6 @@ class Orders(QObject):
         '''
         return len(self.__levels)
 
-    def ge
+    def get_price(self, index):
+        '''
+        Returns the price at the sp
