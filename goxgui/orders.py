@@ -190,3 +190,5 @@ class Orders(QObject):
 
     def get_volume(self, index):
         '''
+        Returns the volume at the specified level.
+  
