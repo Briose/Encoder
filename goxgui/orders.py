@@ -186,4 +186,7 @@ class Orders(QObject):
         '''
         Returns the price at the specified level.
         '''
-        return self.__levels[inde
+        return self.__levels[index].key
+
+    def get_volume(self, index):
+        '''
