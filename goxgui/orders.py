@@ -198,4 +198,7 @@ class Orders(QObject):
         '''
         Returns the total volume at the specified level.
         '''
-        return self.__leve
+        return self.__levels[index].total
+
+    def get_quote(self, index):
+ 
