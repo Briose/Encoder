@@ -194,4 +194,6 @@ class Orders(QObject):
         '''
         return self.__levels[index].volume
 
- 
+    def get_total(self, index):
+        '''
+        Returns the t
