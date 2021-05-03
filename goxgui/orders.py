@@ -201,4 +201,5 @@ class Orders(QObject):
         return self.__levels[index].total
 
     def get_quote(self, index):
- 
+        '''
+        Returns the quote price for the level at th
