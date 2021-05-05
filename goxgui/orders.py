@@ -202,4 +202,6 @@ class Orders(QObject):
 
     def get_quote(self, index):
         '''
-        Returns the quote price for the level at th
+        Returns the quote price for the level at the specified index.
+        '''
+        return money.multiply(self.get
