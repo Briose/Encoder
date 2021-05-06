@@ -210,4 +210,4 @@ class Orders(QObject):
         '''
         Returns the quote price for all levels up to the specified index.
         '''
-        return money.multiply(self.get_price(index), self.get_total(
+        return money.multiply(self.get_price(index), self.get_total(index))
