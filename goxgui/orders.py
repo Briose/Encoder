@@ -206,4 +206,6 @@ class Orders(QObject):
         '''
         return money.multiply(self.get_price(index), self.get_volume(index))
 
-    def get_total_quote(sel
+    def get_total_quote(self, index):
+        '''
+        Returns the quote price for all lev
