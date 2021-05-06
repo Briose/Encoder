@@ -208,4 +208,6 @@ class Orders(QObject):
 
     def get_total_quote(self, index):
         '''
-        Returns the quote price for all lev
+        Returns the quote price for all levels up to the specified index.
+        '''
+        ret
