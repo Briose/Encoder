@@ -194,3 +194,60 @@ class Preferences(QDialog):
         '''
         Fixes some stuff that looks good on windows but bad on mac.
         '''
+        # the default fixed fontA is unreadable on mac, so replace it
+        fontA = QtGui.QFont('Monaco', 11)
+        self.__ui.lineEditPassword.setFont(fontA)
+        self.__ui.lineEditKey.setFont(fontA)
+        self.__ui.lineEditSecret.setFont(fontA)
+
+        # the default label font is too big on mac
+        fontB = QtGui.QFont('Lucida Grande', 11)
+        self.__ui.labelPassword.setFont(fontB)
+        self.__ui.labelKeySecret.setFont(fontB)
+        self.__ui.labelCurrency.setFont(fontB)
+        self.__ui.labelColumns.setFont(fontB)
+        self.__ui.labelGrouping.setFont(fontB)
+        self.__ui.labelOffset.setFont(fontB)
+
+    def __get(self, key):
+        '''
+        Retrieves a property from the global section
+        '''
+        return self.__configparser.get(self.__SECTION_GLOBAL, key)
+
+    def __set(self, key, value):
+        '''
+        Stores a property to the global section
+        '''
+        self.__configparser.set(self.__SECTION_GLOBAL, key, value)
+
+    # end private methods
+
+    # start public methods
+
+    def set_fiat_currencies(self, currencies):
+        '''
+        Sets the fiat currencies available in the preferences dialog.
+        '''
+        self.__fiat_currencies = currencies
+
+        self.__ui.comboBoxCurrency.clear()
+        index = 0
+        for x in self.__fiat_currencies:
+            self.__ui.comboBoxCurrency.insertItem(index, x.symbol)
+            index += 1
+
+    def set_currency(self, index, currency):
+        self.__set('currency_{}'.format(index), currency.symbol)
+
+    def get_currency(self, index):
+        return Currency(self.__get('currency_{}'.format(index)))
+
+    def set_orders_column_enabled(self, column, enabled):
+        self.__set('orders_column_{}'.format(column), str(enabled))
+
+    def is_orders_column_enabled(self, column):
+        return self.__get('orders_column_{}'.format(column)) == 'True'
+
+    def set_proposed_pips(self, pips):
+        self.__set('proposed_pips', str(long(pips)))
