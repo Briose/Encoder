@@ -122,3 +122,75 @@ class Preferences(QDialog):
         self.__ui.checkBoxPrice.setChecked(self.is_orders_column_enabled(
             Preferences.ORDERS_COLUMN_PRICE))
         self.__ui.checkBoxSize.setChecked(self.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_SIZE))
+        self.__ui.checkBoxTotalSize.setChecked(self.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_TOTAL_SIZE))
+        self.__ui.checkBoxQuote.setChecked(self.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_QUOTE))
+        self.__ui.checkBoxTotalQuote.setChecked(self.is_orders_column_enabled(
+            Preferences.ORDERS_COLUMN_TOTAL_QUOTE))
+        self.__ui.doubleSpinBoxOffset.setValue(self.get_proposed_pips())
+
+    def __save_from_gui(self):
+        self.set_grouping(self.__ui.doubleSpinBoxGrouping.value())
+        self.__set_key(str(self.__ui.lineEditKey.text()))
+        self.__set_secret(str(self.__ui.lineEditSecret.text()))
+        quoteCurrency = Currency(str(self.__ui.comboBoxCurrency.currentText()))
+        self.set_currency(Preferences.CURRENCY_INDEX_QUOTE, quoteCurrency)
+        self.set_orders_column_enabled(Preferences.ORDERS_COLUMN_PRICE,
+            self.__ui.checkBoxPrice.isChecked())
+        self.set_orders_column_enabled(Preferences.ORDERS_COLUMN_SIZE,
+            self.__ui.checkBoxSize.isChecked())
+        self.set_orders_column_enabled(Preferences.ORDERS_COLUMN_TOTAL_SIZE,
+            self.__ui.checkBoxTotalSize.isChecked())
+        self.set_orders_column_enabled(Preferences.ORDERS_COLUMN_QUOTE,
+            self.__ui.checkBoxQuote.isChecked())
+        self.set_orders_column_enabled(Preferences.ORDERS_COLUMN_TOTAL_QUOTE,
+            self.__ui.checkBoxTotalQuote.isChecked())
+        self.set_proposed_pips(self.__ui.doubleSpinBoxOffset.value())
+
+    def __has_option(self, option):
+        return self.__configparser.has_option(self.__SECTION_GLOBAL, option)
+
+    def __disable_ok(self, text):
+        self.__ui.buttonBox.button(QDialogButtonBox.Ok).setEnabled(False)
+        self.__set_status(text)
+
+    def __enable_ok(self):
+        self.__ui.buttonBox.button(QDialogButtonBox.Ok).setEnabled(True)
+        self.__set_status('')
+
+    def __save(self):
+        '''
+        Saves the config to the .ini file
+        '''
+        with open(self.__FILENAME, 'wb') as configfile:
+            self.__configparser.write(configfile)
+
+    def __load(self):
+        '''
+        Loads or reloads the config from the .ini file
+        '''
+        self.__configparser.read(self.__FILENAME)
+
+    def __set_key(self, key):
+        '''
+        Writes the specified key to the configuration file.
+        '''
+        self.__set('key', key)
+
+    def __set_secret(self, secret):
+        '''
+        Writes the specified secret to the configuration file (encrypted).
+        '''
+        if secret != '':
+            secret = utilities.encrypt(secret, Preferences.__PASSPHRASE)
+        self.__set('secret', secret)
+
+    def __set_status(self, text):
+        self.__ui.labelStatus.setText(text)
+
+    def __adjust_for_mac(self):
+        '''
+        Fixes some stuff that looks good on windows but bad on mac.
+        '''
