@@ -251,3 +251,54 @@ class Preferences(QDialog):
 
     def set_proposed_pips(self, pips):
         self.__set('proposed_pips', str(long(pips)))
+
+    def get_proposed_pips(self):
+        return long(self.__get('proposed_pips'))
+
+    def get_key(self):
+        '''
+        Loads the key from the configuration file.
+        '''
+        return self.__get('key')
+
+    def get_secret(self):
+        '''
+        Loads the secret from the configuration file.
+        '''
+        secret = self.__get('secret')
+        if secret == '':
+            return secret
+
+        return utilities.decrypt(secret, Preferences.__PASSPHRASE)
+
+    def get_grouping(self):
+        '''
+        Loads the grouping size from the configuration file.
+        '''
+        return float(self.__get('grouping'))
+
+    def set_grouping(self, grouping):
+        '''
+        Saves the grouping size into the configuration file.
+        '''
+        return self.__set('grouping', grouping)
+
+    def show(self):
+        '''
+        Shows the preference dialog.
+        @return: True if the user accepted, false otherwise
+        '''
+        self.__load_to_gui()
+        result = self.exec_()
+        return result == QDialog.Accepted
+
+    def apply(self):
+        '''
+        Applies the user changes.
+        Changes made by the user during show()
+        do not propagate until apply() is called.
+        '''
+        self.__save_from_gui()
+        self.__save()
+
+    # end public methods
