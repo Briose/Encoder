@@ -120,3 +120,73 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Password:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelPassword">
+         <property name="text">
+          <string>Set an application-wide password to protect account-related functionalities against misuse.</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="lineEditKey">
+         <property name="toolTip">
+          <string>Insert your MtGox key here</string>
+         </property>
+         <property name="placeholderText">
+          <string>Key</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="lineEditSecret">
+         <property name="toolTip">
+          <string>Insert your MtGox secret here</string>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText</set>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::PasswordEchoOnEdit</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Secret</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="lineEditPassword">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>Application password</string>
