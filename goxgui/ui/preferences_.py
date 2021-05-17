@@ -15,4 +15,5 @@ except AttributeError:
     _fromUtf8 = lambda s: s
 
 class Ui_Preferences(object):
-    def setupUi
+    def setupUi(self, Preferences):
+        Preferences.setObjectName(_fromUtf8("
