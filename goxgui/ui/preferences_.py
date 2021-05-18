@@ -20,4 +20,5 @@ class Ui_Preferences(object):
         Preferences.resize(740, 600)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
-       
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHei
