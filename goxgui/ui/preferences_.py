@@ -22,4 +22,5 @@ class Ui_Preferences(object):
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Preferences.sizePolicy().hasHeightForWidth())
-        P
+        Preferences.setSizePolicy(sizePolicy)
+        Preferences.setMinimumS
