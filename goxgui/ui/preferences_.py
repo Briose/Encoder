@@ -25,4 +25,5 @@ class Ui_Preferences(object):
         Preferences.setSizePolicy(sizePolicy)
         Preferences.setMinimumSize(QtCore.QSize(740, 600))
         Preferences.setMaximumSize(QtCore.QSize(740, 600))
-        self.gridLayout = QtGui.QGridLayout(Prefe
+        self.gridLayout = QtGui.QGridLayout(Preferences)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout
