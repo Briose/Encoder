@@ -28,4 +28,4 @@ class Ui_Preferences(object):
         self.gridLayout = QtGui.QGridLayout(Preferences)
         self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.tabWidget = QtGui.QTabWidget(Preferences)
-   
+        self.tabWidget.setObjectName(_fromUtf8("tabWidget"))
