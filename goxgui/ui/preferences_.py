@@ -26,4 +26,6 @@ class Ui_Preferences(object):
         Preferences.setMinimumSize(QtCore.QSize(740, 600))
         Preferences.setMaximumSize(QtCore.QSize(740, 600))
         self.gridLayout = QtGui.QGridLayout(Preferences)
-        self.gridLayout.setObjectName(_fromUtf8("gridLayout
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.tabWidget = QtGui.QTabWidget(Preferences)
+   
