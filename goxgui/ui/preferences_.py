@@ -23,4 +23,5 @@ class Ui_Preferences(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Preferences.sizePolicy().hasHeightForWidth())
         Preferences.setSizePolicy(sizePolicy)
-        Preferences.setMinimumS
+        Preferences.setMinimumSize(QtCore.QSize(740, 600))
+        Preferences.setMaximumSize(QtCore.QS
