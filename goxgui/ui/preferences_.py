@@ -29,3 +29,5 @@ class Ui_Preferences(object):
         self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.tabWidget = QtGui.QTabWidget(Preferences)
         self.tabWidget.setObjectName(_fromUtf8("tabWidget"))
+        self.tabCurrency = QtGui.QWidget()
+        self.tabCurrency.s
