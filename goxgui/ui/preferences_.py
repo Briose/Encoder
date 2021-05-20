@@ -32,4 +32,5 @@ class Ui_Preferences(object):
         self.tabCurrency = QtGui.QWidget()
         self.tabCurrency.setObjectName(_fromUtf8("tabCurrency"))
         self.gridLayout_2 = QtGui.QGridLayout(self.tabCurrency)
-        self.gridLayout_2.setO
+        self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
+        spacerItem
