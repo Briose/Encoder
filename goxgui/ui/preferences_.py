@@ -39,4 +39,5 @@ class Ui_Preferences(object):
         self.label_6.setMinimumSize(QtCore.QSize(100, 0))
         self.label_6.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_6.setObjectName(_fromUtf8("label_6"))
-        self.gri
+        self.gridLayout_2.addWidget(self.label_6, 2, 0, 1, 1)
+       
