@@ -34,4 +34,6 @@ class Ui_Preferences(object):
         self.gridLayout_2 = QtGui.QGridLayout(self.tabCurrency)
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
         spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 2, 
+        self.gridLayout_2.addItem(spacerItem, 2, 2, 1, 1)
+        self.label_6 = QtGui.QLabel(self.tabCurrency)
+  
