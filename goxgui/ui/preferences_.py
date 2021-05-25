@@ -40,4 +40,5 @@ class Ui_Preferences(object):
         self.label_6.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_6.setObjectName(_fromUtf8("label_6"))
         self.gridLayout_2.addWidget(self.label_6, 2, 0, 1, 1)
-        self.comboBoxCurrency = QtGui.QComboBox(self.tabCurr
+        self.comboBoxCurrency = QtGui.QComboBox(self.tabCurrency)
+        self.comboBoxCurrency.setObjectName(_fromUtf8("
