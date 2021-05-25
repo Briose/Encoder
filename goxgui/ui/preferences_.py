@@ -37,4 +37,4 @@ class Ui_Preferences(object):
         self.gridLayout_2.addItem(spacerItem, 2, 2, 1, 1)
         self.label_6 = QtGui.QLabel(self.tabCurrency)
         self.label_6.setMinimumSize(QtCore.QSize(100, 0))
-    
+        self.label_6.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.A
