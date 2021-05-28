@@ -42,4 +42,5 @@ class Ui_Preferences(object):
         self.gridLayout_2.addWidget(self.label_6, 2, 0, 1, 1)
         self.comboBoxCurrency = QtGui.QComboBox(self.tabCurrency)
         self.comboBoxCurrency.setObjectName(_fromUtf8("comboBoxCurrency"))
-        self.gridLayout_2.addWidget(self
+        self.gridLayout_2.addWidget(self.comboBoxCurrency, 2, 1, 1, 1)
+        self.labelCurrency = QtGui.QLa
