@@ -44,4 +44,6 @@ class Ui_Preferences(object):
         self.comboBoxCurrency.setObjectName(_fromUtf8("comboBoxCurrency"))
         self.gridLayout_2.addWidget(self.comboBoxCurrency, 2, 1, 1, 1)
         self.labelCurrency = QtGui.QLabel(self.tabCurrency)
-        self.labelCurrency.setTextFormat(QtCore.Qt.
+        self.labelCurrency.setTextFormat(QtCore.Qt.AutoText)
+        self.labelCurrency.setWordWrap(True)
+        se
