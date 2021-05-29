@@ -46,4 +46,5 @@ class Ui_Preferences(object):
         self.labelCurrency = QtGui.QLabel(self.tabCurrency)
         self.labelCurrency.setTextFormat(QtCore.Qt.AutoText)
         self.labelCurrency.setWordWrap(True)
-        se
+        self.labelCurrency.setObjectName(_fromUtf8("labelCurrency"))
+        
