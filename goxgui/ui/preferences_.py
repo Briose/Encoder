@@ -48,4 +48,4 @@ class Ui_Preferences(object):
         self.labelCurrency.setWordWrap(True)
         self.labelCurrency.setObjectName(_fromUtf8("labelCurrency"))
         self.gridLayout_2.addWidget(self.labelCurrency, 1, 1, 1, 2)
-        spacerItem1
+        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePoli
