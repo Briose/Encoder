@@ -49,4 +49,5 @@ class Ui_Preferences(object):
         self.labelCurrency.setObjectName(_fromUtf8("labelCurrency"))
         self.gridLayout_2.addWidget(self.labelCurrency, 1, 1, 1, 2)
         spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.gri
+        self.gridLayout_2.addItem(spacerItem1, 3, 2, 1, 1)
+        sel
