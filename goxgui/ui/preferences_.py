@@ -51,4 +51,5 @@ class Ui_Preferences(object):
         spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.gridLayout_2.addItem(spacerItem1, 3, 2, 1, 1)
         self.tabWidget.addTab(self.tabCurrency, _fromUtf8(""))
-        s
+        self.tabSecurity = QtGui.QWidget()
+        self.tabSecurity.setObjec
