@@ -53,4 +53,5 @@ class Ui_Preferences(object):
         self.tabWidget.addTab(self.tabCurrency, _fromUtf8(""))
         self.tabSecurity = QtGui.QWidget()
         self.tabSecurity.setObjectName(_fromUtf8("tabSecurity"))
-        self.gridLayout_5 = QtG
+        self.gridLayout_5 = QtGui.QGridLayout(self.tabSecurity)
+        self.gridLayout
