@@ -55,4 +55,5 @@ class Ui_Preferences(object):
         self.tabSecurity.setObjectName(_fromUtf8("tabSecurity"))
         self.gridLayout_5 = QtGui.QGridLayout(self.tabSecurity)
         self.gridLayout_5.setObjectName(_fromUtf8("gridLayout_5"))
-        self.lab
+        self.labelKeySecret = QtGui.QLabel(self.tabSecurity)
+        self.labelKeySecret.setWo
