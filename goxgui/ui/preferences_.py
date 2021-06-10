@@ -58,4 +58,5 @@ class Ui_Preferences(object):
         self.labelKeySecret = QtGui.QLabel(self.tabSecurity)
         self.labelKeySecret.setWordWrap(True)
         self.labelKeySecret.setObjectName(_fromUtf8("labelKeySecret"))
-        self.gridLayout_5.addWidget(self.labelKeyS
+        self.gridLayout_5.addWidget(self.labelKeySecret, 3, 2, 1, 1)
+        self.label_2 = QtGui.QLabel(self.tabSecurit
