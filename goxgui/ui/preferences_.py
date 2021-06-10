@@ -63,4 +63,5 @@ class Ui_Preferences(object):
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.se
+        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
+ 
