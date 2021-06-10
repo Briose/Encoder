@@ -60,4 +60,5 @@ class Ui_Preferences(object):
         self.labelKeySecret.setObjectName(_fromUtf8("labelKeySecret"))
         self.gridLayout_5.addWidget(self.labelKeySecret, 3, 2, 1, 1)
         self.label_2 = QtGui.QLabel(self.tabSecurity)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Pref
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        sizePolicy.setHorizont
