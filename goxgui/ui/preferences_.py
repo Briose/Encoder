@@ -65,4 +65,5 @@ class Ui_Preferences(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
         self.label_2.setSizePolicy(sizePolicy)
-        self.lab
+        self.label_2.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_2.setAlign
