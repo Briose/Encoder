@@ -68,4 +68,6 @@ class Ui_Preferences(object):
         self.label_2.setMinimumSize(QtCore.QSize(100, 0))
         self.label_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_2.setObjectName(_fromUtf8("label_2"))
-        self.gridLayout_5.addWidget(self.label_2,
+        self.gridLayout_5.addWidget(self.label_2, 1, 0, 1, 1)
+        self.line_3 = QtGui.QFrame(self.tabSecurity)
+   
