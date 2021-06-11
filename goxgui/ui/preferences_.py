@@ -64,4 +64,5 @@ class Ui_Preferences(object):
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
- 
+        self.label_2.setSizePolicy(sizePolicy)
+        self.lab
