@@ -73,4 +73,5 @@ class Ui_Preferences(object):
         self.line_3.setFrameShape(QtGui.QFrame.HLine)
         self.line_3.setFrameShadow(QtGui.QFrame.Sunken)
         self.line_3.setObjectName(_fromUtf8("line_3"))
-       
+        self.gridLayout_5.addWidget(self.line_3, 2, 0, 1, 3)
+        se
