@@ -75,4 +75,5 @@ class Ui_Preferences(object):
         self.line_3.setObjectName(_fromUtf8("line_3"))
         self.gridLayout_5.addWidget(self.line_3, 2, 0, 1, 3)
         self.labelPassword = QtGui.QLabel(self.tabSecurity)
-        self.labelP
+        self.labelPassword.setWordWrap(True)
+        self.labelPassword.setObjectName(_fro
