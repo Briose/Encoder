@@ -81,4 +81,5 @@ class Ui_Preferences(object):
         self.lineEditKey = QtGui.QLineEdit(self.tabSecurity)
         self.lineEditKey.setObjectName(_fromUtf8("lineEditKey"))
         self.gridLayout_5.addWidget(self.lineEditKey, 4, 2, 1, 1)
-        self.lineEditS
+        self.lineEditSecret = QtGui.QLineEdit(self.tabSecurity)
+        self.lin
