@@ -79,4 +79,5 @@ class Ui_Preferences(object):
         self.labelPassword.setObjectName(_fromUtf8("labelPassword"))
         self.gridLayout_5.addWidget(self.labelPassword, 0, 2, 1, 1)
         self.lineEditKey = QtGui.QLineEdit(self.tabSecurity)
-        self.lineEditKe
+        self.lineEditKey.setObjectName(_fromUtf8("lineEditKey"))
+        self.gridLay
