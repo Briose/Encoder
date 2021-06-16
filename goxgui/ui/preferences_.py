@@ -82,4 +82,4 @@ class Ui_Preferences(object):
         self.lineEditKey.setObjectName(_fromUtf8("lineEditKey"))
         self.gridLayout_5.addWidget(self.lineEditKey, 4, 2, 1, 1)
         self.lineEditSecret = QtGui.QLineEdit(self.tabSecurity)
-        self.lin
+        self.lineEditSecret.setInputMethodHints(QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt
