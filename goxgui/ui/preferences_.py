@@ -86,4 +86,5 @@ class Ui_Preferences(object):
         self.lineEditSecret.setEchoMode(QtGui.QLineEdit.PasswordEchoOnEdit)
         self.lineEditSecret.setObjectName(_fromUtf8("lineEditSecret"))
         self.gridLayout_5.addWidget(self.lineEditSecret, 5, 2, 1, 1)
-        self.lineEditPassword = Qt
+        self.lineEditPassword = QtGui.QLineEdit(self.tabSecurity)
+        self.lineEditPassword
