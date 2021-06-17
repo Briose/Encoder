@@ -85,4 +85,5 @@ class Ui_Preferences(object):
         self.lineEditSecret.setInputMethodHints(QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt.ImhNoPredictiveText)
         self.lineEditSecret.setEchoMode(QtGui.QLineEdit.PasswordEchoOnEdit)
         self.lineEditSecret.setObjectName(_fromUtf8("lineEditSecret"))
-        self.gridLayout_5.
+        self.gridLayout_5.addWidget(self.lineEditSecret, 5, 2, 1, 1)
+        self.lineEditPassword = Qt
