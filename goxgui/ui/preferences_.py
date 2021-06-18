@@ -95,4 +95,5 @@ class Ui_Preferences(object):
         spacerItem2 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.gridLayout_5.addItem(spacerItem2, 6, 2, 1, 1)
         self.label_3 = QtGui.QLabel(self.tabSecurity)
-        self.label_3.setMinimumSize(Qt
+        self.label_3.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_3.setAlignment(QtCore.Qt.AlignRi
