@@ -88,4 +88,5 @@ class Ui_Preferences(object):
         self.gridLayout_5.addWidget(self.lineEditSecret, 5, 2, 1, 1)
         self.lineEditPassword = QtGui.QLineEdit(self.tabSecurity)
         self.lineEditPassword.setEnabled(False)
-        self.lineEditPassword.setInputMethodHints(Qt
+        self.lineEditPassword.setInputMethodHints(QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt.ImhNoPredictiveText)
+ 
