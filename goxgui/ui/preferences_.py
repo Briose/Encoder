@@ -92,4 +92,5 @@ class Ui_Preferences(object):
         self.lineEditPassword.setEchoMode(QtGui.QLineEdit.PasswordEchoOnEdit)
         self.lineEditPassword.setObjectName(_fromUtf8("lineEditPassword"))
         self.gridLayout_5.addWidget(self.lineEditPassword, 1, 2, 1, 1)
-        spacerItem2 = QtGui.QSpacerItem(20, 40, QtGui.QSiz
+        spacerItem2 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        
