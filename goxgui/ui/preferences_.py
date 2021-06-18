@@ -94,4 +94,5 @@ class Ui_Preferences(object):
         self.gridLayout_5.addWidget(self.lineEditPassword, 1, 2, 1, 1)
         spacerItem2 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.gridLayout_5.addItem(spacerItem2, 6, 2, 1, 1)
-        self.label_3 = Q
+        self.label_3 = QtGui.QLabel(self.tabSecurity)
+        self.label_3.setMinimumSize(Qt
