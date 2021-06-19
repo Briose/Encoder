@@ -99,4 +99,5 @@ class Ui_Preferences(object):
         self.label_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.gridLayout_5.addWidget(self.label_3, 4, 0, 1, 1)
-        sel
+        self.label_4 = QtGui.QLabel(self.tabSecurity)
+        self
