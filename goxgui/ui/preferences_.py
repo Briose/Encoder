@@ -97,4 +97,5 @@ class Ui_Preferences(object):
         self.label_3 = QtGui.QLabel(self.tabSecurity)
         self.label_3.setMinimumSize(QtCore.QSize(100, 0))
         self.label_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.gr
