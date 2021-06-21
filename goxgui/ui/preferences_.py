@@ -107,4 +107,5 @@ class Ui_Preferences(object):
         self.tabWidget.addTab(self.tabSecurity, _fromUtf8(""))
         self.tabOrderBook = QtGui.QWidget()
         self.tabOrderBook.setObjectName(_fromUtf8("tabOrderBook"))
-        self.gridLayou
+        self.gridLayout_3 = QtGui.QGridLayout(self.tabOrderBook)
+        self.gr
