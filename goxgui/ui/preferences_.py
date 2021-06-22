@@ -114,4 +114,4 @@ class Ui_Preferences(object):
         self.line_2.setFrameShadow(QtGui.QFrame.Sunken)
         self.line_2.setObjectName(_fromUtf8("line_2"))
         self.gridLayout_3.addWidget(self.line_2, 10, 0, 1, 3)
-        spacerItem3 = QtGui
+        spacerItem3 = QtGui.QSpacerItem(20, 164, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Ex
