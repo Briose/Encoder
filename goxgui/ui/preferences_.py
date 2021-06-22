@@ -109,4 +109,5 @@ class Ui_Preferences(object):
         self.tabOrderBook.setObjectName(_fromUtf8("tabOrderBook"))
         self.gridLayout_3 = QtGui.QGridLayout(self.tabOrderBook)
         self.gridLayout_3.setObjectName(_fromUtf8("gridLayout_3"))
-        self.line
+        self.line_2 = QtGui.QFrame(self.tabOrderBook)
+        self.line_2.setFr
