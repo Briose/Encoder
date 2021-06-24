@@ -119,4 +119,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxOffset = QtGui.QDoubleSpinBox(self.tabOrderBook)
         self.doubleSpinBoxOffset.setDecimals(0)
         self.doubleSpinBoxOffset.setMaximum(999999.0)
-        self.doubleSpinBoxO
+        self.doubleSpinBoxOffset.setObjectName(_fromUtf8("doubleSpinBoxOffset"))
+       
