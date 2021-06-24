@@ -116,4 +116,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.line_2, 10, 0, 1, 3)
         spacerItem3 = QtGui.QSpacerItem(20, 164, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem3, 13, 1, 1, 1)
-      
+        self.doubleSpinBoxOffset = QtGui.QDoubleSpinBox(self.tabOrderBook)
+  
