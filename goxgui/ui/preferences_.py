@@ -118,4 +118,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addItem(spacerItem3, 13, 1, 1, 1)
         self.doubleSpinBoxOffset = QtGui.QDoubleSpinBox(self.tabOrderBook)
         self.doubleSpinBoxOffset.setDecimals(0)
-        self.doubl
+        self.doubleSpinBoxOffset.setMaximum(999999.0)
+        self.doubleSpinBoxO
