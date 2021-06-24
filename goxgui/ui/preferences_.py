@@ -120,4 +120,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxOffset.setDecimals(0)
         self.doubleSpinBoxOffset.setMaximum(999999.0)
         self.doubleSpinBoxOffset.setObjectName(_fromUtf8("doubleSpinBoxOffset"))
-       
+        self.gridLayout_3.addWidget(self.doubleSpinBoxOffset, 12, 1, 1, 1)
+     
