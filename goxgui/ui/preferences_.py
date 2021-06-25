@@ -121,4 +121,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxOffset.setMaximum(999999.0)
         self.doubleSpinBoxOffset.setObjectName(_fromUtf8("doubleSpinBoxOffset"))
         self.gridLayout_3.addWidget(self.doubleSpinBoxOffset, 12, 1, 1, 1)
-     
+        self.label_5 = QtGui.QLabel(self.tabOrderBook)
+        self.label_5.se
