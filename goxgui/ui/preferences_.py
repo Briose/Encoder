@@ -126,4 +126,5 @@ class Ui_Preferences(object):
         self.label_5.setObjectName(_fromUtf8("label_5"))
         self.gridLayout_3.addWidget(self.label_5, 12, 0, 1, 1)
         spacerItem4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        s
+        self.gridLayout_3.addItem(spacerItem4, 1, 2, 1, 1)
+        self.label_8
