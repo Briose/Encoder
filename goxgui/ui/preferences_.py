@@ -127,4 +127,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.label_5, 12, 0, 1, 1)
         spacerItem4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.gridLayout_3.addItem(spacerItem4, 1, 2, 1, 1)
-        self.label_8
+        self.label_8 = QtGui.QLabel(self.tabOrderBook)
+        self.label_8.setMinimumSi
