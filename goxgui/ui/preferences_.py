@@ -128,4 +128,5 @@ class Ui_Preferences(object):
         spacerItem4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.gridLayout_3.addItem(spacerItem4, 1, 2, 1, 1)
         self.label_8 = QtGui.QLabel(self.tabOrderBook)
-        self.label_8.setMinimumSi
+        self.label_8.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_8.setAlignment(QtCore.Q
