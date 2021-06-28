@@ -130,4 +130,5 @@ class Ui_Preferences(object):
         self.label_8 = QtGui.QLabel(self.tabOrderBook)
         self.label_8.setMinimumSize(QtCore.QSize(100, 0))
         self.label_8.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-       
+        self.label_8.setObjectName(_fromUtf8("label_8"))
+        self.gridLayout_3.
