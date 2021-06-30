@@ -135,4 +135,5 @@ class Ui_Preferences(object):
         self.checkBoxTotalQuote = QtGui.QCheckBox(self.tabOrderBook)
         self.checkBoxTotalQuote.setObjectName(_fromUtf8("checkBoxTotalQuote"))
         self.gridLayout_3.addWidget(self.checkBoxTotalQuote, 9, 1, 1, 1)
-     
+        self.checkBoxPrice = QtGui.QCheckBox(self.tabOrderBook)
+        self.che
