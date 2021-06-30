@@ -140,4 +140,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.checkBoxPrice, 4, 1, 1, 1)
         self.doubleSpinBoxGrouping = QtGui.QDoubleSpinBox(self.tabOrderBook)
         self.doubleSpinBoxGrouping.setDecimals(3)
-        self.d
+        self.doubleSpinBoxGrouping.setMinimum(-9999999.0)
+        self.doubleSpinBoxGroup
