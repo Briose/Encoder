@@ -138,4 +138,6 @@ class Ui_Preferences(object):
         self.checkBoxPrice = QtGui.QCheckBox(self.tabOrderBook)
         self.checkBoxPrice.setObjectName(_fromUtf8("checkBoxPrice"))
         self.gridLayout_3.addWidget(self.checkBoxPrice, 4, 1, 1, 1)
-        self.doubleSpinBoxGrouping = QtGui.QDoubleSpinBox(self.tabOrderB
+        self.doubleSpinBoxGrouping = QtGui.QDoubleSpinBox(self.tabOrderBook)
+        self.doubleSpinBoxGrouping.setDecimals(3)
+        self.d
