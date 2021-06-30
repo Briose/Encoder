@@ -133,4 +133,5 @@ class Ui_Preferences(object):
         self.label_8.setObjectName(_fromUtf8("label_8"))
         self.gridLayout_3.addWidget(self.label_8, 4, 0, 1, 1)
         self.checkBoxTotalQuote = QtGui.QCheckBox(self.tabOrderBook)
-        self.checkBoxTotalQuo
+        self.checkBoxTotalQuote.setObjectName(_fromUtf8("checkBoxTotalQuote"))
+        self.g
