@@ -144,4 +144,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxGrouping.setMaximum(9999999.0)
         self.doubleSpinBoxGrouping.setSingleStep(0.01)
         self.doubleSpinBoxGrouping.setObjectName(_fromUtf8("doubleSpinBoxGrouping"))
-        self.gridLayout
+        self.gridLayout_3.addWidget(self.doubleSpinBoxGrouping, 1, 1, 1, 1)
+        self.labelG
