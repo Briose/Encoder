@@ -143,4 +143,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxGrouping.setMinimum(-9999999.0)
         self.doubleSpinBoxGrouping.setMaximum(9999999.0)
         self.doubleSpinBoxGrouping.setSingleStep(0.01)
-        self.doubleSpinBoxGrouping.setObjectName(_fr
+        self.doubleSpinBoxGrouping.setObjectName(_fromUtf8("doubleSpinBoxGrouping"))
+        self.gridLayout
