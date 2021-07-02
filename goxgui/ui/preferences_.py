@@ -141,4 +141,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxGrouping = QtGui.QDoubleSpinBox(self.tabOrderBook)
         self.doubleSpinBoxGrouping.setDecimals(3)
         self.doubleSpinBoxGrouping.setMinimum(-9999999.0)
-        self.doubleSpinBoxGroup
+        self.doubleSpinBoxGrouping.setMaximum(9999999.0)
+        self.doubleSpinBoxGrouping.setSingleStep(0
