@@ -145,4 +145,5 @@ class Ui_Preferences(object):
         self.doubleSpinBoxGrouping.setSingleStep(0.01)
         self.doubleSpinBoxGrouping.setObjectName(_fromUtf8("doubleSpinBoxGrouping"))
         self.gridLayout_3.addWidget(self.doubleSpinBoxGrouping, 1, 1, 1, 1)
-        self.labelG
+        self.labelGrouping = QtGui.QLabel(self.tabOrderBook)
+        self.labelGr
