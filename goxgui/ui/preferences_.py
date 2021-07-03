@@ -147,4 +147,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.doubleSpinBoxGrouping, 1, 1, 1, 1)
         self.labelGrouping = QtGui.QLabel(self.tabOrderBook)
         self.labelGrouping.setTextFormat(QtCore.Qt.AutoText)
-        self.labelGroupin
+        self.labelGrouping.setWordWrap(True)
+        self.labelGrouping.setObjectNa
