@@ -149,4 +149,5 @@ class Ui_Preferences(object):
         self.labelGrouping.setTextFormat(QtCore.Qt.AutoText)
         self.labelGrouping.setWordWrap(True)
         self.labelGrouping.setObjectName(_fromUtf8("labelGrouping"))
-        self.gridLayout_3.addWid
+        self.gridLayout_3.addWidget(self.labelGrouping, 0, 1, 1, 2)
+        self.checkB
