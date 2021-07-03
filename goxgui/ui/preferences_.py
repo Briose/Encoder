@@ -152,4 +152,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.labelGrouping, 0, 1, 1, 2)
         self.checkBoxSize = QtGui.QCheckBox(self.tabOrderBook)
         self.checkBoxSize.setObjectName(_fromUtf8("checkBoxSize"))
-        self.gridLayout_3.addWidget(self
+        self.gridLayout_3.addWidget(self.checkBoxSize, 5, 1, 1, 1)
+        self.labelColumns = QtG
