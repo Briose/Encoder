@@ -162,4 +162,5 @@ class Ui_Preferences(object):
         self.checkBoxQuote.setObjectName(_fromUtf8("checkBoxQuote"))
         self.gridLayout_3.addWidget(self.checkBoxQuote, 7, 1, 1, 1)
         self.label_7 = QtGui.QLabel(self.tabOrderBook)
-   
+        self.label_7.setMinimumSize(QtCore.QSize(100, 0))
+    
