@@ -159,4 +159,4 @@ class Ui_Preferences(object):
         self.labelColumns.setObjectName(_fromUtf8("labelColumns"))
         self.gridLayout_3.addWidget(self.labelColumns, 3, 1, 1, 2)
         self.checkBoxQuote = QtGui.QCheckBox(self.tabOrderBook)
-  
+        self.checkBoxQuote.setObjectName(_fromUtf8("checkBo
