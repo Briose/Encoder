@@ -163,4 +163,4 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.checkBoxQuote, 7, 1, 1, 1)
         self.label_7 = QtGui.QLabel(self.tabOrderBook)
         self.label_7.setMinimumSize(QtCore.QSize(100, 0))
-    
+        self.label_7.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignT
