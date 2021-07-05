@@ -157,4 +157,6 @@ class Ui_Preferences(object):
         self.labelColumns.setTextFormat(QtCore.Qt.AutoText)
         self.labelColumns.setWordWrap(True)
         self.labelColumns.setObjectName(_fromUtf8("labelColumns"))
-        self.gridLayout_3.addWidget(self.labelColumns, 3, 1, 1, 2
+        self.gridLayout_3.addWidget(self.labelColumns, 3, 1, 1, 2)
+        self.checkBoxQuote = QtGui.QCheckBox(self.tabOrderBook)
+  
