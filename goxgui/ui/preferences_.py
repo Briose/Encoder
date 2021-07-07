@@ -167,4 +167,5 @@ class Ui_Preferences(object):
         self.label_7.setObjectName(_fromUtf8("label_7"))
         self.gridLayout_3.addWidget(self.label_7, 1, 0, 1, 1)
         self.line = QtGui.QFrame(self.tabOrderBook)
-        self.line.setFr
+        self.line.setFrameShape(QtGui.QFrame.HLine)
+        self.line.setFrameShadow(QtGui.Q
