@@ -169,4 +169,5 @@ class Ui_Preferences(object):
         self.line = QtGui.QFrame(self.tabOrderBook)
         self.line.setFrameShape(QtGui.QFrame.HLine)
         self.line.setFrameShadow(QtGui.QFrame.Sunken)
-        self.line.setObjectName(_fromUtf
+        self.line.setObjectName(_fromUtf8("line"))
+        self.gridLayout_3.addWidget(self.line, 2, 0, 1, 3)
