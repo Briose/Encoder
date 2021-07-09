@@ -173,4 +173,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.line, 2, 0, 1, 3)
         self.labelOffset = QtGui.QLabel(self.tabOrderBook)
         self.labelOffset.setObjectName(_fromUtf8("labelOffset"))
-        self.gr
+        self.gridLayout_3.addWidget(self.labelOffset, 11, 1, 1, 1)
+     
