@@ -177,4 +177,5 @@ class Ui_Preferences(object):
         self.checkBoxTotalSize = QtGui.QCheckBox(self.tabOrderBook)
         self.checkBoxTotalSize.setObjectName(_fromUtf8("checkBoxTotalSize"))
         self.gridLayout_3.addWidget(self.checkBoxTotalSize, 6, 1, 1, 1)
-        se
+        self.tabWidget.addTab(self.tabOrderBook, _fromUtf8(""))
+        self.g
