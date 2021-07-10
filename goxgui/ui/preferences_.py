@@ -175,4 +175,5 @@ class Ui_Preferences(object):
         self.labelOffset.setObjectName(_fromUtf8("labelOffset"))
         self.gridLayout_3.addWidget(self.labelOffset, 11, 1, 1, 1)
         self.checkBoxTotalSize = QtGui.QCheckBox(self.tabOrderBook)
-        self.ch
+        self.checkBoxTotalSize.setObjectName(_fromUtf8("checkBoxTotalSize"))
+        self.
