@@ -182,4 +182,5 @@ class Ui_Preferences(object):
         self.horizontalLayout = QtGui.QHBoxLayout()
         self.horizontalLayout.setContentsMargins(20, -1, 20, -1)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        self.labelSt
+        self.labelStatus = QtGui.QLabel(Preferences)
+        self.labelStatus
