@@ -185,4 +185,5 @@ class Ui_Preferences(object):
         self.labelStatus = QtGui.QLabel(Preferences)
         self.labelStatus.setText(_fromUtf8(""))
         self.labelStatus.setObjectName(_fromUtf8("labelStatus"))
-        self.horizontalLayo
+        self.horizontalLayout.addWidget(self.labelStatus)
+        self.buttonBox = QtGui.QDialogButt
