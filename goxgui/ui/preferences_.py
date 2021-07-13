@@ -181,4 +181,5 @@ class Ui_Preferences(object):
         self.gridLayout.addWidget(self.tabWidget, 0, 0, 1, 1)
         self.horizontalLayout = QtGui.QHBoxLayout()
         self.horizontalLayout.setContentsMargins(20, -1, 20, -1)
-        self.horizontalLayout.setObjectNa
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        self.labelSt
