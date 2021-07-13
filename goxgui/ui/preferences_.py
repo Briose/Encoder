@@ -179,4 +179,5 @@ class Ui_Preferences(object):
         self.gridLayout_3.addWidget(self.checkBoxTotalSize, 6, 1, 1, 1)
         self.tabWidget.addTab(self.tabOrderBook, _fromUtf8(""))
         self.gridLayout.addWidget(self.tabWidget, 0, 0, 1, 1)
-        self.
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setContent
