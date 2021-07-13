@@ -180,4 +180,5 @@ class Ui_Preferences(object):
         self.tabWidget.addTab(self.tabOrderBook, _fromUtf8(""))
         self.gridLayout.addWidget(self.tabWidget, 0, 0, 1, 1)
         self.horizontalLayout = QtGui.QHBoxLayout()
-        self.horizontalLayout.setContent
+        self.horizontalLayout.setContentsMargins(20, -1, 20, -1)
+        self.horizontalLayout.setObjectNa
