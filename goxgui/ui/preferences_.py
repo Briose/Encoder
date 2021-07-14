@@ -189,4 +189,5 @@ class Ui_Preferences(object):
         self.buttonBox = QtGui.QDialogButtonBox(Preferences)
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
         self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
-  
+        self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
+    
