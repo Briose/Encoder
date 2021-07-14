@@ -191,4 +191,5 @@ class Ui_Preferences(object):
         self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
         self.horizontalLayout.addWidget(self.buttonBox)
-        self
+        self.horizontalLayout.setStretch(0, 1)
+        self.gridLayout.addLayou
