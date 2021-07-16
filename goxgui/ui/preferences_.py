@@ -192,4 +192,6 @@ class Ui_Preferences(object):
         self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
         self.horizontalLayout.addWidget(self.buttonBox)
         self.horizontalLayout.setStretch(0, 1)
-        self.gridLayout.addLayou
+        self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
+
+        self.retran
