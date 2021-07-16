@@ -196,4 +196,4 @@ class Ui_Preferences(object):
 
         self.retranslateUi(Preferences)
         self.tabWidget.setCurrentIndex(2)
-        QtCore.QObj
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accep
