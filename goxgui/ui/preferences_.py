@@ -194,4 +194,6 @@ class Ui_Preferences(object):
         self.horizontalLayout.setStretch(0, 1)
         self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
 
-        self.retran
+        self.retranslateUi(Preferences)
+        self.tabWidget.setCurrentIndex(2)
+        QtCore.QObj
