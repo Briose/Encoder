@@ -199,4 +199,6 @@ class Ui_Preferences(object):
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), Preferences.accept)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), Preferences.reject)
         QtCore.QMetaObject.connectSlotsByName(Preferences)
-        Preference
+        Preferences.setTabOrder(self.buttonBox, self.tabWidget)
+
+    def 
