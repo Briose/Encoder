@@ -201,4 +201,5 @@ class Ui_Preferences(object):
         QtCore.QMetaObject.connectSlotsByName(Preferences)
         Preferences.setTabOrder(self.buttonBox, self.tabWidget)
 
-    def 
+    def retranslateUi(self, Preferences):
+        Preference
