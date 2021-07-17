@@ -203,4 +203,4 @@ class Ui_Preferences(object):
 
     def retranslateUi(self, Preferences):
         Preferences.setWindowTitle(QtGui.QApplication.translate("Preferences", "Preferences", None, QtGui.QApplication.UnicodeUTF8))
-      
+        self.label_6.setText(QtGui.QApplication.translate("Preferences
