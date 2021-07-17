@@ -197,4 +197,5 @@ class Ui_Preferences(object):
         self.retranslateUi(Preferences)
         self.tabWidget.setCurrentIndex(2)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), Preferences.accept)
-        QtCore.QObject.connect(self.butto
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), Preferences.reject)
+        
