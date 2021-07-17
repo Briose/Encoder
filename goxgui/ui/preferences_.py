@@ -202,4 +202,5 @@ class Ui_Preferences(object):
         Preferences.setTabOrder(self.buttonBox, self.tabWidget)
 
     def retranslateUi(self, Preferences):
-        Preferences.setWindowTitle(QtGui.QApplication.translate("Prefer
+        Preferences.setWindowTitle(QtGui.QApplication.translate("Preferences", "Preferences", None, QtGui.QApplication.UnicodeUTF8))
+      
