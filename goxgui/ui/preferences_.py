@@ -204,4 +204,4 @@ class Ui_Preferences(object):
     def retranslateUi(self, Preferences):
         Preferences.setWindowTitle(QtGui.QApplication.translate("Preferences", "Preferences", None, QtGui.QApplication.UnicodeUTF8))
         self.label_6.setText(QtGui.QApplication.translate("Preferences", "Fiat:", None, QtGui.QApplication.UnicodeUTF8))
-        self.labelCurrency.setText(QtGui.QApplication.translate("Preferen
+        self.labelCurrency.setText(QtGui.QApplication.translate("Preferences", "Fiat currency you would like to trade", None, QtGui.QApplicati
