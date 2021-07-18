@@ -206,3 +206,4 @@ class Ui_Preferences(object):
         self.label_6.setText(QtGui.QApplication.translate("Preferences", "Fiat:", None, QtGui.QApplication.UnicodeUTF8))
         self.labelCurrency.setText(QtGui.QApplication.translate("Preferences", "Fiat currency you would like to trade", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabCurrency), QtGui.QApplication.translate("Preferences", "Currency", None, QtGui.QApplication.UnicodeUTF8))
+        self.labelKeySecret.setText(QtGui.QApplica
