@@ -208,4 +208,5 @@ class Ui_Preferences(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabCurrency), QtGui.QApplication.translate("Preferences", "Currency", None, QtGui.QApplication.UnicodeUTF8))
         self.labelKeySecret.setText(QtGui.QApplication.translate("Preferences", "Insert your market\'s (e.g. MtGox) API key here. If you don\'t have an API key yet, you should be able to generate one on your market\'s website.", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("Preferences", "Password:", None, QtGui.QApplication.UnicodeUTF8))
-        self.labelPassword.setText(QtGui.QApplication.translate("Preferences", "Set an application-wide password to protect account-related functionalities against 
+        self.labelPassword.setText(QtGui.QApplication.translate("Preferences", "Set an application-wide password to protect account-related functionalities against misuse.", None, QtGui.QApplication.UnicodeUTF8))
+      
