@@ -210,4 +210,4 @@ class Ui_Preferences(object):
         self.label_2.setText(QtGui.QApplication.translate("Preferences", "Password:", None, QtGui.QApplication.UnicodeUTF8))
         self.labelPassword.setText(QtGui.QApplication.translate("Preferences", "Set an application-wide password to protect account-related functionalities against misuse.", None, QtGui.QApplication.UnicodeUTF8))
         self.lineEditKey.setToolTip(QtGui.QApplication.translate("Preferences", "Insert your MtGox key here", None, QtGui.QApplication.UnicodeUTF8))
-        self.lineEditKey.setPlaceholderText(Qt
+        self.lineEditKey.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Key", None, QtGui.QApplicati
