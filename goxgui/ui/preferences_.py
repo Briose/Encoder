@@ -212,4 +212,4 @@ class Ui_Preferences(object):
         self.lineEditKey.setToolTip(QtGui.QApplication.translate("Preferences", "Insert your MtGox key here", None, QtGui.QApplication.UnicodeUTF8))
         self.lineEditKey.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Key", None, QtGui.QApplication.UnicodeUTF8))
         self.lineEditSecret.setToolTip(QtGui.QApplication.translate("Preferences", "Insert your MtGox secret here", None, QtGui.QApplication.UnicodeUTF8))
-        self.lineEditSecret.setPlaceholderText(QtGui.QApplication.translate("P
+        self.lineEditSecret.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Secret", None, QtGui.QApplication.UnicodeUTF8
