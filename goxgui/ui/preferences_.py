@@ -213,4 +213,5 @@ class Ui_Preferences(object):
         self.lineEditKey.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Key", None, QtGui.QApplication.UnicodeUTF8))
         self.lineEditSecret.setToolTip(QtGui.QApplication.translate("Preferences", "Insert your MtGox secret here", None, QtGui.QApplication.UnicodeUTF8))
         self.lineEditSecret.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Secret", None, QtGui.QApplication.UnicodeUTF8))
-        self.lineEditPassword.setToolTip(QtGui.QApplication.translate("Preferences", "Application password", None, Q
+        self.lineEditPassword.setToolTip(QtGui.QApplication.translate("Preferences", "Application password", None, QtGui.QApplication.UnicodeUTF8))
+        self.lineE
