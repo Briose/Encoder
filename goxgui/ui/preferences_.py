@@ -216,4 +216,4 @@ class Ui_Preferences(object):
         self.lineEditPassword.setToolTip(QtGui.QApplication.translate("Preferences", "Application password", None, QtGui.QApplication.UnicodeUTF8))
         self.lineEditPassword.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Password", None, QtGui.QApplication.UnicodeUTF8))
         self.label_3.setText(QtGui.QApplication.translate("Preferences", "Key:", None, QtGui.QApplication.UnicodeUTF8))
-        
+        self.label_4.setText(QtGui.QApplication.translate("Preferences",
