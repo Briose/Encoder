@@ -220,4 +220,5 @@ class Ui_Preferences(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabSecurity), QtGui.QApplication.translate("Preferences", "Security", None, QtGui.QApplication.UnicodeUTF8))
         self.label_5.setText(QtGui.QApplication.translate("Preferences", "Offset:", None, QtGui.QApplication.UnicodeUTF8))
         self.label_8.setText(QtGui.QApplication.translate("Preferences", "Columns:", None, QtGui.QApplication.UnicodeUTF8))
-        self.checkBoxTotalQuote.setText(QtGui.QApplication.translate("Preferences", "Total Quote", None, QtGui.QApplicati
+        self.checkBoxTotalQuote.setText(QtGui.QApplication.translate("Preferences", "Total Quote", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBoxPrice.setText(QtGui
