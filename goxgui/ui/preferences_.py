@@ -217,4 +217,5 @@ class Ui_Preferences(object):
         self.lineEditPassword.setPlaceholderText(QtGui.QApplication.translate("Preferences", "Password", None, QtGui.QApplication.UnicodeUTF8))
         self.label_3.setText(QtGui.QApplication.translate("Preferences", "Key:", None, QtGui.QApplication.UnicodeUTF8))
         self.label_4.setText(QtGui.QApplication.translate("Preferences", "Secret:", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabSecurity), QtGui.QApplication.translate("Preferences", "Security", None, QtGui.
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabSecurity), QtGui.QApplication.translate("Preferences", "Security", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(
