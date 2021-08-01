@@ -222,4 +222,4 @@ class Ui_Preferences(object):
         self.label_8.setText(QtGui.QApplication.translate("Preferences", "Columns:", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBoxTotalQuote.setText(QtGui.QApplication.translate("Preferences", "Total Quote", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBoxPrice.setText(QtGui.QApplication.translate("Preferences", "Price", None, QtGui.QApplication.UnicodeUTF8))
-        self.labelGrouping.setText(QtGui.QApplication.translate("Preferences", "Group size for ask 
+        self.labelGrouping.setText(QtGui.QApplication.translate("Preferences", "Group size for ask / bid orders (zero means no grouping)", None, QtGui.QApplicatio
