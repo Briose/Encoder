@@ -226,4 +226,5 @@ class Ui_Preferences(object):
         self.checkBoxSize.setText(QtGui.QApplication.translate("Preferences", "Size", None, QtGui.QApplication.UnicodeUTF8))
         self.labelColumns.setText(QtGui.QApplication.translate("Preferences", "Choose the columns to display", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBoxQuote.setText(QtGui.QApplication.translate("Preferences", "Quote", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_7.setText(QtGui.QApplication.translate("Preferenc
+        self.label_7.setText(QtGui.QApplication.translate("Preferences", "Grouping:", None, QtGui.QApplication.UnicodeUTF8))
+       
