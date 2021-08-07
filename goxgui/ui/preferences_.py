@@ -229,4 +229,5 @@ class Ui_Preferences(object):
         self.label_7.setText(QtGui.QApplication.translate("Preferences", "Grouping:", None, QtGui.QApplication.UnicodeUTF8))
         self.labelOffset.setText(QtGui.QApplication.translate("Preferences", "Pips to add / subtract to proposed price when clicking order book", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBoxTotalSize.setText(QtGui.QApplication.translate("Preferences", "Total Size", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabOrderBook), QtGui.QApplication.translate("Preferences", "Order Book", None, QtGui.QApplication.UnicodeUTF8)
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabOrderBook), QtGui.QApplication.translate("Preferences", "Order Book", None, QtGui.QApplication.UnicodeUTF8))
+
