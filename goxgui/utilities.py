@@ -7,4 +7,8 @@ import os
 import platform
 
 
-platform_s
+platform_string = None
+
+
+def encrypt(secret, password):
+    '''
