@@ -15,4 +15,5 @@ def encrypt(secret, password):
     Encrypts the specified secret using the specified password.
     '''
 
-    
+    # pylint: disable=E1101
+    hashed_pass = hashlib.sha512(password.encode('utf
