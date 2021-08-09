@@ -16,4 +16,6 @@ def encrypt(secret, password):
     '''
 
     # pylint: disable=E1101
-    hashed_pass = hashlib.sha512(password.encode('utf
+    hashed_pass = hashlib.sha512(password.encode('utf-8')).digest()
+    crypt_key = hashed_pass[:32]
+    cry
