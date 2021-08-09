@@ -12,3 +12,7 @@ platform_string = None
 
 def encrypt(secret, password):
     '''
+    Encrypts the specified secret using the specified password.
+    '''
+
+    
