@@ -22,4 +22,5 @@ def encrypt(secret, password):
     aes = AES.new(crypt_key, AES.MODE_OFB, crypt_ini)
 
     # since the secret is a base64 string we can just just pad it with
-    # 
+    # spaces which can easily be stripped again after decryping
+  
