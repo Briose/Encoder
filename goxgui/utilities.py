@@ -23,4 +23,5 @@ def encrypt(secret, password):
 
     # since the secret is a base64 string we can just just pad it with
     # spaces which can easily be stripped again after decryping
-  
+    secret += ' ' * (16 - len(secret) % 16)
+    retur
