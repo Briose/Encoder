@@ -21,4 +21,5 @@ def encrypt(secret, password):
     crypt_ini = hashed_pass[-16:]
     aes = AES.new(crypt_key, AES.MODE_OFB, crypt_ini)
 
-    # since the secr
+    # since the secret is a base64 string we can just just pad it with
+    # 
