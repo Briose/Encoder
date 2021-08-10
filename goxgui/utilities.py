@@ -36,4 +36,6 @@ def decrypt(secret, password):
     if secret == '':
         raise Exception('secret cannot be empty')
 
-    # pylint: disable=E11
+    # pylint: disable=E1101
+    hashed_pass = hashlib.sha512(password.encode('utf-8')).digest()
+   
