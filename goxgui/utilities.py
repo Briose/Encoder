@@ -40,4 +40,5 @@ def decrypt(secret, password):
     hashed_pass = hashlib.sha512(password.encode('utf-8')).digest()
     crypt_key = hashed_pass[:32]
     crypt_ini = hashed_pass[-16:]
- 
+    aes = AES.new(crypt_key, AES.MODE_OFB, crypt_ini)
+    encrypted_
