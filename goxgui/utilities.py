@@ -34,4 +34,6 @@ def decrypt(secret, password):
     '''
 
     if secret == '':
-        raise 
+        raise Exception('secret cannot be empty')
+
+    # pylint: disable=E11
