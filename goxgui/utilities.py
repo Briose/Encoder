@@ -27,4 +27,6 @@ def encrypt(secret, password):
     return base64.b64encode(aes.encrypt(secret)).decode('ascii')
 
 
-def decrypt
+def decrypt(secret, password):
+    '''
+    Decrypts the specified key using 
