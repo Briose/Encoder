@@ -30,4 +30,8 @@ def encrypt(secret, password):
 def decrypt(secret, password):
     '''
     Decrypts the specified key using the specified password,
-    throws exception in case of f
+    throws exception in case of failure.
+    '''
+
+    if secret == '':
+        raise 
