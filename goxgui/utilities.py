@@ -45,4 +45,6 @@ def decrypt(secret, password):
     secret = aes.decrypt(encrypted_secret).strip()
 
     # is it plain ascii? (if not this will raise exception)
-    dummy = secret.decode('a
+    dummy = secret.decode('ascii')
+    # can it be decoded? correct size afterwards?
+    if l
