@@ -42,3 +42,6 @@ def decrypt(secret, password):
     crypt_ini = hashed_pass[-16:]
     aes = AES.new(crypt_key, AES.MODE_OFB, crypt_ini)
     encrypted_secret = base64.b64decode(secret.strip().encode('ascii'))
+    secret = aes.decrypt(encrypted_secret).strip()
+
+    # is it plain
