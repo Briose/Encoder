@@ -47,4 +47,5 @@ def decrypt(secret, password):
     # is it plain ascii? (if not this will raise exception)
     dummy = secret.decode('ascii')
     # can it be decoded? correct size afterwards?
-    if l
+    if len(base64.b64decode(secret)) != 64:
+        raise Exception('
