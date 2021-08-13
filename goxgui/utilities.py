@@ -44,4 +44,5 @@ def decrypt(secret, password):
     encrypted_secret = base64.b64decode(secret.strip().encode('ascii'))
     secret = aes.decrypt(encrypted_secret).strip()
 
-    # is it plain
+    # is it plain ascii? (if not this will raise exception)
+    dummy = secret.decode('a
