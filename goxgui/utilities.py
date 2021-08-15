@@ -48,4 +48,6 @@ def decrypt(secret, password):
     dummy = secret.decode('ascii')
     # can it be decoded? correct size afterwards?
     if len(base64.b64decode(secret)) != 64:
-        raise Exception('
+        raise Exception('decrypted secret has wrong size')
+
+    return secret
