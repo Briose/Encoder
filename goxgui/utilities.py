@@ -51,3 +51,8 @@ def decrypt(secret, password):
         raise Exception('decrypted secret has wrong size')
 
     return secret
+
+
+def assert_valid_key(key):
+    '''
+    Asserts that the specified ke
