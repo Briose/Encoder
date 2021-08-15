@@ -59,4 +59,7 @@ def assert_valid_key(key):
     throws an exception otherwise.
     '''
 
-    
+    if key == '':
+        raise Exception('key cannot be empty')
+
+    # k
