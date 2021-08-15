@@ -62,4 +62,6 @@ def assert_valid_key(key):
     if key == '':
         raise Exception('key cannot be empty')
 
-    # k
+    # key must be only hex digits and have the right size
+    key = key.strip()
+  
