@@ -55,4 +55,8 @@ def decrypt(secret, password):
 
 def assert_valid_key(key):
     '''
-    Asserts that the specified ke
+    Asserts that the specified key is valid,
+    throws an exception otherwise.
+    '''
+
+    
