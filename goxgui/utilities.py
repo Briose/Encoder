@@ -65,4 +65,5 @@ def assert_valid_key(key):
     # key must be only hex digits and have the right size
     key = key.strip()
     hex_key = key.replace('-', '').encode('ascii')
-    if l
+    if len(binascii.unhexlify(hex_key)) != 16:
+        raise Exception('key h
