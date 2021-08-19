@@ -66,4 +66,7 @@ def assert_valid_key(key):
     key = key.strip()
     hex_key = key.replace('-', '').encode('ascii')
     if len(binascii.unhexlify(hex_key)) != 16:
-        raise Exception('key h
+        raise Exception('key has wrong size')
+
+
+def assert_valid_secret(secret):
