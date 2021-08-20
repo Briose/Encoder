@@ -81,4 +81,5 @@ def assert_valid_secret(secret):
 
 def resource_path(relative_path):
     '''
-    Get a
+    Get absolute path to resource, works for dev and for PyInstaller.
+  
