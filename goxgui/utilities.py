@@ -77,3 +77,8 @@ def assert_valid_secret(secret):
     result = decrypt(encrypt(secret, 'foo'), 'foo')
     if result != secret:
         raise Exception('encryption / decryption test failed.')
+
+
+def resource_path(relative_path):
+    '''
+    Get a
