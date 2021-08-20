@@ -76,4 +76,4 @@ def assert_valid_secret(secret):
     '''
     result = decrypt(encrypt(secret, 'foo'), 'foo')
     if result != secret:
-        rais
+        raise Exception('encryption / decryption test failed.')
