@@ -82,4 +82,4 @@ def assert_valid_secret(secret):
 def resource_path(relative_path):
     '''
     Get absolute path to resource, works for dev and for PyInstaller.
-  
+    Taken from: http://stackoverflow.com/questions/7674790/bund
