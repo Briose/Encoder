@@ -74,4 +74,6 @@ def assert_valid_secret(secret):
     Asserts that the specified secret is valid,
     throws an exception otherwise.
     '''
-    result = decrypt(encrypt
+    result = decrypt(encrypt(secret, 'foo'), 'foo')
+    if result != secret:
+        rais
