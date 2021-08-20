@@ -72,3 +72,6 @@ def assert_valid_key(key):
 def assert_valid_secret(secret):
     '''
     Asserts that the specified secret is valid,
+    throws an exception otherwise.
+    '''
+    result = decrypt(encrypt
