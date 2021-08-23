@@ -93,4 +93,6 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-def get_
+def get_platform():
+    global platform_string
+    if platform_strin
