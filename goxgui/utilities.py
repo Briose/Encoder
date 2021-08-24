@@ -98,4 +98,9 @@ def get_platform():
     if platform_string == None:
         platform_string = platform.system()
 
-    return platf
+    return platform_string
+
+
+def platform_is_mac():
+    '''
+    Returns 
