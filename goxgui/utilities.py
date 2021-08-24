@@ -103,4 +103,6 @@ def get_platform():
 
 def platform_is_mac():
     '''
-    Returns 
+    Returns true if the current platform is mac.
+    '''
+    return get_platf
