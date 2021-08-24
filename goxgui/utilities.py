@@ -95,4 +95,7 @@ def resource_path(relative_path):
 
 def get_platform():
     global platform_string
-    if platform_strin
+    if platform_string == None:
+        platform_string = platform.system()
+
+    return platf
