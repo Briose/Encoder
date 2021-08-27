@@ -105,4 +105,4 @@ def platform_is_mac():
     '''
     Returns true if the current platform is mac.
     '''
-    return get_platf
+    return get_platform() == 'Darwin'
