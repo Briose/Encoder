@@ -306,3 +306,51 @@ class View(QMainWindow):
     def display_userorder(self, price, size, order_type, oid, status):
 
         if order_type == '':
+            self.status_message("Order <a href=\"{0}\">{0}</a> {1}.".format(
+                oid, status))
+            if status == 'removed' and self.get_order_id() == oid:
+                self.set_order_id('')
+        else:
+            self.status_message("{0} size: {1}, price: {2}, oid: <a href=\"{3}\">{3}</a> - {4}".format(# @IgnorePep8
+                str.upper(str(order_type)),
+                money.to_long_string(size, self.get_base_currency()),
+                money.to_long_string(price, self.get_quote_currency()),
+                oid,
+                status))
+            if status == 'post-pending':
+                self.set_order_id(oid)
+
+    def slot_update_price_from_asks(self, index):
+        self.update_price_from_asks(index.row())
+
+    def update_price_from_asks(self, row):
+        value = self.orders_ask.get_price(row)
+        pip = money.pip(
+            self.get_quote_currency()) * self.preferences.get_proposed_pips()
+        self.set_trade_price(value - pip)
+
+    def slot_update_price_from_bids(self, index):
+        self.update_price_from_bids(index.row())
+
+    def update_price_from_bids(self, row):
+        value = self.orders_bid.get_price(row)
+        pip = money.pip(
+            self.get_quote_currency()) * self.preferences.get_proposed_pips()
+        self.set_trade_price(value + pip)
+
+    def cancel_order(self):
+        order_id = self.get_order_id()
+        self.status_message(
+            "Cancelling order <a href=\"{0}\">{0}</a>...".format(order_id))
+        self.market.cancel(order_id)
+
+    def update_price_best(self):
+
+        trade_type = self.get_selected_trade_type()
+        if trade_type == 'BUY':
+            self.update_price_from_bids(0)
+        elif trade_type == 'SELL':
+            self.update_price_from_asks(0)
+
+    def stop(self):
+        self.market.stop()
