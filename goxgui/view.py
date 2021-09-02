@@ -179,3 +179,65 @@ class View(QMainWindow):
     def set_selected_trade_type(self, trade_type):
         if trade_type == 'BUY':
             self.ui.radioButtonBuy.toggle()
+        else:
+            self.ui.radioButtonSell.toggle()
+
+    def slot_log(self, text):
+
+        logging.info(text)
+        text = self.prepend_date(text)
+
+        doOutput = False
+
+        if self.ui.checkBoxLogSystem.isChecked():
+            doOutput = True
+
+        for entry in self.logchannels:
+            if entry[1] in text:
+                doOutput = entry[0].isChecked()
+
+        if doOutput:
+            self.ui.textBrowserLog.append(text)
+
+    def prepend_date(self, text):
+        millis = int(round(time.time() * 1000)) % 1000
+        return '{}.{:0>3} {}'.format(time.strftime('%X'), millis, text)
+
+    def status_message(self, text):
+        # call move cursor before append to work around link clicking bug
+        # see: https://bugreports.qt-project.org/browse/QTBUG-539
+        logging.info(text)
+        text = self.prepend_date(text)
+        self.ui.textBrowserStatus.moveCursor(QTextCursor.End)
+        self.ui.textBrowserStatus.append(text)
+
+    def get_trade_size(self):
+        return money.to_money(self.ui.doubleSpinBoxSize.value())
+
+    def set_trade_size(self, value):
+        self.ui.doubleSpinBoxSize.setValue(money.to_float(value))
+
+    def get_trade_price(self):
+        return money.to_money(self.ui.doubleSpinBoxPrice.value())
+
+    def set_trade_price(self, value):
+        self.ui.doubleSpinBoxPrice.setValue(money.to_float(value))
+
+    def get_trade_total(self):
+        return money.to_money(self.ui.doubleSpinBoxTotal.value())
+
+    def set_trade_total(self, value):
+        self.ui.doubleSpinBoxTotal.setValue(money.to_float(value))
+
+    def get_order_id(self):
+        return str(self.ui.lineEditOrder.text())
+
+    def set_order_id(self, text):
+        self.ui.lineEditOrder.setText(text)
+
+    def order_selected(self, url):
+        self.set_order_id(str(url.toString()))
+
+    def display_wallet(self):
+
+        self.info.set_wallet_a(self.market.get_balance(
