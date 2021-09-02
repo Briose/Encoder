@@ -109,3 +109,73 @@ class View(QMainWindow):
         self.info.set_wallet_b(None)
 
         # initialize ticker values
+        self.info.set_ticker_ask(None)
+        self.info.set_ticker_bid(None)
+
+        # adjust decimal values to current currencies
+        self.adjust_decimals()
+
+        # set up table models
+        self.init_models()
+
+    def init_models(self):
+
+        self.orders_ask = Orders(self.market, Market.TYPE_ASK,
+            self.preferences.get_grouping())
+        self.model_ask = Model(self, self.orders_ask, self.preferences)
+        self.ui.tableAsk.setModel(self.model_ask)
+
+        self.orders_bid = Orders(self.market, Market.TYPE_BID,
+            self.preferences.get_grouping())
+        self.model_bid = Model(self, self.orders_bid, self.preferences)
+        self.ui.tableBid.setModel(self.model_bid)
+
+    def adjust_decimals(self):
+        currencyQuote = self.get_quote_currency()
+        currencyBase = self.get_base_currency()
+        self.ui.doubleSpinBoxSize.setDecimals(currencyBase.decimals)
+        self.ui.doubleSpinBoxPrice.setDecimals(currencyQuote.decimals)
+        self.ui.doubleSpinBoxTotal.setDecimals(currencyQuote.decimals)
+
+    def adjust_for_mac(self):
+        '''
+        Fixes some stuff that looks good on windows but bad on mac.
+        '''
+        # the default fixed font is unreadable on mac, so replace it
+        font = QtGui.QFont('Monaco', 11)
+        self.ui.tableAsk.setFont(font)
+        self.ui.tableBid.setFont(font)
+        self.ui.tableInfo.setFont(font)
+        self.ui.textBrowserLog.setFont(font)
+        self.ui.textBrowserStatus.setFont(font)
+        self.ui.lineEditOrder.setFont(font)
+        self.ui.doubleSpinBoxSize.setFont(font)
+        self.ui.doubleSpinBoxPrice.setFont(font)
+        self.ui.doubleSpinBoxTotal.setFont(font)
+
+        # the space between application title bar and
+        # the ui elements is too small on mac
+        margins = self.ui.widgetMain.layout().contentsMargins()
+        margins.setTop(24)
+        self.ui.widgetMain.layout().setContentsMargins(margins)
+
+    def show_preferences(self):
+
+        result = self.preferences.show()
+        if result == True:
+            self.status_message('Preferences changed, restarting market.')
+            self.market.stop()
+            self.preferences.apply()
+            self.init()
+            self.market.start()
+            self.status_message('Market restarted successfully.')
+
+    def get_selected_trade_type(self):
+        if self.ui.radioButtonBuy.isChecked():
+            return 'BUY'
+        else:
+            return 'SELL'
+
+    def set_selected_trade_type(self, trade_type):
+        if trade_type == 'BUY':
+            self.ui.radioButtonBuy.toggle()
