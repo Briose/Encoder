@@ -241,3 +241,68 @@ class View(QMainWindow):
     def display_wallet(self):
 
         self.info.set_wallet_a(self.market.get_balance(
+            Preferences.CURRENCY_INDEX_BASE))
+        self.info.set_wallet_b(self.market.get_balance(
+            Preferences.CURRENCY_INDEX_QUOTE))
+
+    def update_ticker(self, bid, ask):
+
+        self.info.set_ticker_bid(bid)
+        self.info.set_ticker_ask(ask)
+
+    def set_trade_size_from_wallet(self):
+        self.set_trade_size(
+            self.market.get_balance(Preferences.CURRENCY_INDEX_BASE))
+        self.set_selected_trade_type('SELL')
+
+    def set_trade_total_from_wallet(self):
+        self.set_trade_total(
+            self.market.get_balance(Preferences.CURRENCY_INDEX_QUOTE))
+        self.set_selected_trade_type('BUY')
+
+    def display_orderlag(self, ms, text):
+        self.info.set_orderlag(ms)
+
+    def execute_trade(self):
+
+        trade_type = self.get_selected_trade_type()
+
+        size = self.get_trade_size()
+        price = self.get_trade_price()
+        total = money.multiply(price, size)
+
+        trade_name = 'BID' if trade_type == 'BUY' else 'ASK'
+
+        self.status_message('Placing order: {0} {1} at {2} (total {3})...'.format(# @IgnorePep8
+            trade_name,
+            money.to_long_string(size, self.get_base_currency()),
+            money.to_long_string(price, self.get_quote_currency()),
+            money.to_long_string(total, self.get_quote_currency())))
+
+        if trade_type == 'BUY':
+            self.market.buy(price, size)
+        else:
+            self.market.sell(price, size)
+
+    def recalculate_size(self):
+
+        price = self.get_trade_price()
+
+        if price == 0:
+            return
+
+        total = self.get_trade_total()
+        size = money.divide(total, price)
+        self.set_trade_size(size)
+
+    def recalculate_total(self):
+
+        price = self.get_trade_price()
+        size = self.get_trade_size()
+        total = money.multiply(price, size)
+
+        self.set_trade_total(total)
+
+    def display_userorder(self, price, size, order_type, oid, status):
+
+        if order_type == '':
