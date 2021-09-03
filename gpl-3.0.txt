@@ -1,2 +1,4 @@
                     GNU GENERAL PUBLIC LICENSE
-                       Versi
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Softwa
