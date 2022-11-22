@@ -3,4 +3,6 @@
 <stringAttribute key="bad_container_name" value="/goxgui/launc"/>
 <booleanAttribute key="org.eclipse.ant.ui.DEFAULT_VM_INSTALL" value="false"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/goxgui/
+<listEntry value="/goxgui/deploy/build.xml"/>
+</listAttribute>
+<listAttribute key="org.
