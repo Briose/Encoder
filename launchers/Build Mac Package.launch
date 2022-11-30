@@ -12,4 +12,5 @@
 <listEntry value="org.eclipse.ui.externaltools.launchGroup"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
-<stringAttribute key="org.eclipse.jdt
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="goxgui"/>
+<stringAttribute key="org.eclipse.j
