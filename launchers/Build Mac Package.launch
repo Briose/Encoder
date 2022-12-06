@@ -17,4 +17,4 @@
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_TARGETS" value="build_mac,"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/goxgui/deploy/build.xml}"/>
 <stringAttribute key="process_factory_id" value="org.eclipse.ant.ui.remoteAntProcessFactory"/>
-</l
+</launchConfiguration>
