@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.ant.AntLaunchConfigurationType">
-<stringAttribute key="bad_container_name" value="/go
+<stringAttribute key="bad_container_name" value="/goxgui/launc"/>
+<booleanAttribute key="org.eclipse.ant.ui.DEFAUL
