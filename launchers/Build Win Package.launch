@@ -5,4 +5,7 @@
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/goxgui/deploy/build.xml"/>
 </listAttribute>
-<listAttribute key="org.eclipse.debug.core.MAPPED_R
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<listAttribute key="or
