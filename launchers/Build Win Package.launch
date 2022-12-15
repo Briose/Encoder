@@ -11,4 +11,4 @@
 <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
 <listEntry value="org.eclipse.ui.externaltools.launchGroup"/>
 </listAttribute>
-<stringAt
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="
