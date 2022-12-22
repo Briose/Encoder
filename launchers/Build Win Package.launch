@@ -15,3 +15,4 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="goxgui"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_TARGETS" value="build_win,"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" valu
