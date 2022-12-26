@@ -1,3 +1,4 @@
 #!/bin/sh
 
-export PYTHONPATH='../goxg
+export PYTHONPATH='../goxgui:../goxtool'
+/usr/local/bin/python ../goxgui/application.p
