@@ -5,4 +5,5 @@ import money
 
 class Test(unittest.TestCase):
 
-    def test_
+    def test_multiply(self):
+        self.assertEqual(1000000000,
