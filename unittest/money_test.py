@@ -14,4 +14,5 @@ class Test(unittest.TestCase):
             money.divide(1000000000, 500000000))
 
     def test_to_string(self):
-        self.assertEqual
+        self.assertEquals('7,000.00000',
+            money.to_string(7000000
