@@ -15,4 +15,7 @@ class Test(unittest.TestCase):
 
     def test_to_string(self):
         self.assertEquals('7,000.00000',
-            money.to_string(7000000
+            money.to_string(700000000000, Currency('USD')))
+
+    def test_to_long_string(self):
+  
