@@ -22,4 +22,6 @@ class Test(unittest.TestCase):
             money.to_long_string(200000000000, Currency('EUR')))
 
     def test_to_float(self):
-        sel
+        self.assertEquals(6.0, money.to_float(600000000))
+
+    def
