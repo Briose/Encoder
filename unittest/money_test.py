@@ -25,4 +25,7 @@ class Test(unittest.TestCase):
         self.assertEquals(6.0, money.to_float(600000000))
 
     def test_pip(self):
-        self.assertEquals(1000, money.pip(Curren
+        self.assertEquals(1000, money.pip(Currency('USD')))
+
+    def test_to_money(self):
+        self.assertEquals(15
