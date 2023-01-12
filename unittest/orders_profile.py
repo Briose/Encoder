@@ -1,0 +1,29 @@
+
+from market import Market
+from market_mock import MarketMock
+from orders import Orders
+import random
+import unittest
+import cProfile
+import pstats
+
+
+class Test(unittest.TestCase):
+
+    COUNT = 10000
+
+    def setUp(self):
+
+        self.market = MarketMock()
+        self.orders = Orders(self.market, Market.TYPE_ASK)
+
+        self.profile = cProfile.Profile()
+        self.profile.enable()
+
+    def tearDown(self):
+
+        self.profile.disable()
+        stats = pstats.Stats(self.profile)
+        stats.strip_dirs().sort_stats('time').print_stats(5)
+
+    def test_profile_depth_ask_random(self):

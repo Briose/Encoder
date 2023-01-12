@@ -28,4 +28,4 @@ class Test(unittest.TestCase):
         self.assertEquals(1000, money.pip(Currency('USD')))
 
     def test_to_money(self):
-        self.assertEquals(15
+        self.assertEquals(1550000000, money.to_money(15.5))
