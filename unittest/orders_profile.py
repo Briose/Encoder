@@ -27,3 +27,35 @@ class Test(unittest.TestCase):
         stats.strip_dirs().sort_stats('time').print_stats(5)
 
     def test_profile_depth_ask_random(self):
+
+        count = 0
+        while count < self.COUNT:
+            self.market.depth_ask(float(random.randint(0, 12000)) / 100, 1.0)
+            count += 1
+
+    def test_profile_depth_ask_sequence(self):
+
+        count = 0
+        while count < self.COUNT:
+            self.market.depth_ask(float(count) / 100, 1.0)
+            count += 1
+
+    def test_profile_depth_asks_random(self):
+
+        count = 0
+        depths = []
+        while count < self.COUNT:
+            depths.append([float(random.randint(0, 12000)) / 100, 1.0])
+            count += 1
+
+        self.market.depth_asks(depths)
+
+    def test_profile_depth_asks_sequence(self):
+
+        count = 0
+        depths = []
+        while count < self.COUNT:
+            depths.append([float(count) / 100, 1.0])
+            count += 1
+
+        self.market.depth_asks(depths)
