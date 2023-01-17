@@ -99,3 +99,61 @@ class Test(unittest.TestCase):
         orders = Orders(self.market, Market.TYPE_ASK)
 
         self.market.depth_ask(10, 3)
+        self.market.depth_ask(20, 2)
+        self.market.depth_ask(30, 1)
+
+        self.assertEquals(3, orders.size())
+
+        self.assertEquals(to_money(3), orders.get_total(0))
+        self.assertEquals(to_money(5), orders.get_total(1))
+        self.assertEquals(to_money(6), orders.get_total(2))
+
+    def test_depth_bid(self):
+
+        orders = Orders(self.market, Market.TYPE_BID)
+
+        self.market.depth_bid(10, 1)
+        self.market.depth_bid(20, 1)
+        self.market.depth_bid(30, 1)
+
+        self.assertEquals(to_money(30), orders.get_price(0))
+        self.assertEquals(to_money(20), orders.get_price(1))
+        self.assertEquals(to_money(10), orders.get_price(2))
+
+    def test_depth_ask(self):
+
+        orders = Orders(self.market, Market.TYPE_ASK, 1)
+
+        self.market.depth_ask(10, 1)
+        self.market.depth_ask(20, 1)
+        self.market.depth_ask(30, 1)
+
+        self.assertEquals(to_money(10), orders.get_price(0))
+        self.assertEquals(to_money(20), orders.get_price(1))
+        self.assertEquals(to_money(30), orders.get_price(2))
+
+    def test_ticker(self):
+
+        ordersA = Orders(self.market, Market.TYPE_ASK)
+        ordersB = Orders(self.market, Market.TYPE_BID)
+
+        self.market.depth_bid(3.5, 1)
+        self.market.depth_bid(3.3, 1)
+        self.market.depth_bid(3.0, 1)
+        self.market.depth_bid(2.2, 1)
+        self.market.depth_bid(1.3, 1)
+        self.market.depth_bid(1.0, 1)
+
+        self.market.depth_ask(4.6, 1)
+        self.market.depth_ask(5.0, 1)
+        self.market.depth_ask(5.2, 1)
+        self.market.depth_ask(6.0, 1)
+        self.market.depth_ask(6.5, 1)
+
+        self.market.ticker(3.0, 5.0)
+
+        self.assertEquals(4, ordersA.size())
+        self.assertEquals(to_money(5.0), ordersA.get_price(0))
+
+        self.assertEquals(4, ordersB.size())
+        self.assertEquals(to_money(3.0), ordersB.get_price(0))
