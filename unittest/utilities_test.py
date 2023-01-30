@@ -5,4 +5,5 @@ import utilities
 class Test(unittest.TestCase):
 
     def test_assert_valid_key_ok(self):
-        utilities.assert_valid_ke
+        utilities.assert_valid_key('fd8484c6-e826-418f-b1ef-2d120a77bb88')
+        utilities.
