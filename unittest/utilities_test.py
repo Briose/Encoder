@@ -9,4 +9,6 @@ class Test(unittest.TestCase):
         utilities.assert_valid_key('25685451-0602-418e-8cee-14f4f01647ed')
 
     def test_assert_valid_key_empty(self):
-        self.assertRaises(Excep
+        self.assertRaises(Exception,
+                          utilities.assert_valid_key,
+      
