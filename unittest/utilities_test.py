@@ -15,4 +15,5 @@ class Test(unittest.TestCase):
 
     def test_assert_valid_key_short(self):
         self.assertRaises(Exception,
-                 
+                          utilities.assert_valid_key,
+                    
