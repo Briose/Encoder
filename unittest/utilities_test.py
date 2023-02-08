@@ -18,4 +18,6 @@ class Test(unittest.TestCase):
                           utilities.assert_valid_key,
                           'b')
 
-    def test_assert_valid_key_nohex(se
+    def test_assert_valid_key_nohex(self):
+        self.assertRaises(Exception,
+            
