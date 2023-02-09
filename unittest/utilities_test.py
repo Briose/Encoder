@@ -23,4 +23,5 @@ class Test(unittest.TestCase):
                           utilities.assert_valid_key,
                           'fd8484x6-e826-418f-b1ef-2d120a77bb88')
 
-    def test_en
+    def test_encrypt_decrypt_ok(self):
+        text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/
