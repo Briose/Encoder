@@ -24,4 +24,4 @@ class Test(unittest.TestCase):
                           'fd8484x6-e826-418f-b1ef-2d120a77bb88')
 
     def test_encrypt_decrypt_ok(self):
-        text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/
+        text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/uayvc57Z98UhYJYy4/eIdEvi5VSuFd/vwMTroy8ELc5VbqWdQWg==' # @IgnorePe
