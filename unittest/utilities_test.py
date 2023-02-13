@@ -26,4 +26,5 @@ class Test(unittest.TestCase):
     def test_encrypt_decrypt_ok(self):
         text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/uayvc57Z98UhYJYy4/eIdEvi5VSuFd/vwMTroy8ELc5VbqWdQWg==' # @IgnorePep8
         password = 'bar'
-        encrypted = utilities.encrypt(te
+        encrypted = utilities.encrypt(text, password)
+        self.assertEqual(text, utilities.decrypt(encr
