@@ -27,4 +27,6 @@ class Test(unittest.TestCase):
         text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/uayvc57Z98UhYJYy4/eIdEvi5VSuFd/vwMTroy8ELc5VbqWdQWg==' # @IgnorePep8
         password = 'bar'
         encrypted = utilities.encrypt(text, password)
-        self.assertEqual(text, utilities.decrypt(encr
+        self.assertEqual(text, utilities.decrypt(encrypted, password))
+
+    def test_encrypt_decrypt_wrong_p
