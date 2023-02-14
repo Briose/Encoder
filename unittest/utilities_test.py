@@ -29,4 +29,5 @@ class Test(unittest.TestCase):
         encrypted = utilities.encrypt(text, password)
         self.assertEqual(text, utilities.decrypt(encrypted, password))
 
-    def test_encrypt_decrypt_wrong_p
+    def test_encrypt_decrypt_wrong_password(self):
+        text = '/GU3lmrgX9LCG7cIpGySlgVIV
