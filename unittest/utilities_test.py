@@ -30,4 +30,6 @@ class Test(unittest.TestCase):
         self.assertEqual(text, utilities.decrypt(encrypted, password))
 
     def test_encrypt_decrypt_wrong_password(self):
-        text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/uayvc57Z98UhYJYy4/eIdEvi5VSuFd/vwMTroy8ELc5VbqWdQWg==' # @Ign
+        text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/uayvc57Z98UhYJYy4/eIdEvi5VSuFd/vwMTroy8ELc5VbqWdQWg==' # @IgnorePep8
+        encrypted = utilities.encrypt(text, 'bar')
+        
