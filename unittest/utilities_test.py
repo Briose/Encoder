@@ -32,4 +32,4 @@ class Test(unittest.TestCase):
     def test_encrypt_decrypt_wrong_password(self):
         text = '/GU3lmrgX9LCG7cIpGySlgVIVT8t8CKn3p/uayvc57Z98UhYJYy4/eIdEvi5VSuFd/vwMTroy8ELc5VbqWdQWg==' # @IgnorePep8
         encrypted = utilities.encrypt(text, 'bar')
-        
+        self.assertRaises(Exception, utilities.decrypt, encrypted, 'foo')
